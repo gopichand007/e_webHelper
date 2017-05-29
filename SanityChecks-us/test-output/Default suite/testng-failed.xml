@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="shield.enus.com.nvidia.www.javatests.DRCheckOutTests">
+        <methods>
+          <include name="InitialProductCount"/>
+          <include name="VerfyCandyRack"/>
+          <include name="VerifyBillingAddress"/>
+          <include name="VerfyShoppingInfoPanelIsDisplayed"/>
+          <include name="VerifynavigationfromCartandBillingpageToShippingInfopage"/>
+          <include name="ValidLogin"/>
+          <include name="VerifyOrderpanel"/>
+          <include name="VerifyProduct"/>
+          <include name="VerifyOrderNumber"/>
+          <include name="completeOrdre"/>
+          <include name="VerfyAddressPanleIsDisplayed"/>
+          <include name="VerfyPaymentInfo"/>
+        </methods>
+      </class> <!-- shield.enus.com.nvidia.www.javatests.DRCheckOutTests -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

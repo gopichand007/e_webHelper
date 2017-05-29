@@ -1,0 +1,432 @@
+<html>
+<head>
+<title>TestNG:   NVIDIA SHIELD TV</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'> NVIDIA SHIELD TV</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>24/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Feb 27 15:20:31 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>529 seconds (529818 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.DRCheckOutTests.InitialProductCount()'><b>InitialProductCount</b><br>Test class: shield.enus.com.nvidia.www.javatests.DRCheckOutTests<br>Parameters: 5088793700<br/>
+<a href="#Output-412925308" onClick='toggleBox("Output-412925308", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-412925308" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-412925308">
+Info: product count is  1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>shield.enus.com.nvidia.www.javatests.DRCheckOutTests@5abca1e0</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.DRCheckOutTests.ValidLogin()'><b>ValidLogin</b><br>Test class: shield.enus.com.nvidia.www.javatests.DRCheckOutTests<br>Parameters: gopihy+1@gmail.com, Nv@123456<br/>
+<a href="#Output-596706728" onClick='toggleBox("Output-596706728", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-596706728" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-596706728">
+info: Web element scrolling success [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> id: dr_login]<br/>
+Info: waitForElementPresent success [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> id: dr_ShoppingCart]<br/>
+Info: Login successful<br/>
+refer this screenshot:C:\Users\gchand.NVIDIA.COM\.jenkins\workspace\shield2.1\shieldJan10th-gopi.zip_expanded\SanityChecks\screenshots ValidLogin<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>shield.enus.com.nvidia.www.javatests.DRCheckOutTests@5abca1e0</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.DRCheckOutTests.VerfyCandyRack()'><b>VerfyCandyRack</b><br>Test class: shield.enus.com.nvidia.www.javatests.DRCheckOutTests<br/>
+<a href="#Output-570794077" onClick='toggleBox("Output-570794077", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-570794077" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-570794077">
+Candy rack section is displayed as expected <br/>
+WE RECOMMEND<br/>
+Candy rack section is not displayed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>shield.enus.com.nvidia.www.javatests.DRCheckOutTests@5abca1e0</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.DRCheckOutTests.VerfyPaymentInfo()'><b>VerfyPaymentInfo</b><br>Test class: shield.enus.com.nvidia.www.javatests.DRCheckOutTests<br/>
+<a href="#Output-478489615" onClick='toggleBox("Output-478489615", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-478489615" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-478489615">
+Info: waitForElementPresent success [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> id: dr_paymentContainer]<br/>
+info: Web element scrolling success [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> id: dr_paymentContainer]<br/>
+Info: webElementIsDisplayed [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> id: dr_paymentContainer]<br/>
+Info: payment information has displayed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>shield.enus.com.nvidia.www.javatests.DRCheckOutTests@5abca1e0</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.DRCheckOutTests.VerfyShoppingInfoPanelIsDisplayed()'><b>VerfyShoppingInfoPanelIsDisplayed</b><br>Test class: shield.enus.com.nvidia.www.javatests.DRCheckOutTests<br/>
+<a href="#Output-1703696921" onClick='toggleBox("Output-1703696921", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1703696921" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1703696921">
+Info: waitForElementPresent success [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> id: dr_shipping]<br/>
+info: Web element scrolling success [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> id: dr_shipping]<br/>
+Info: webElementIsDisplayed [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> id: dr_shipping]<br/>
+Info: waitForElementPresent success [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> xpath: .//*[@id='dr_siteButtons']/input[@class='dr_button']]<br/>
+info: buttonClick() [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> xpath: .//*[@id='dr_siteButtons']/input[@class='dr_button']]<br/>
+info: VerifyYourAddressPanelIsDisplayed()- VerifyYourAddress pop ups ha shown:<br/>
+Info: waitForElementPresent success [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> id: dr_suggestionForm]<br/>
+info: Web element scrolling success [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> id: dr_suggestionForm]<br/>
+Info: webElementIsDisplayed [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> id: dr_suggestionForm]<br/>
+Info: waitForElementPresent success [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> id: selectionButton]<br/>
+info: buttonClick() [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> id: selectionButton]<br/>
+Info:VerifyYourAddressPanelIsDisplayed(): <br/>
+Info:Shopping Information Panel Is Displayed<br/>
+Info: refer this screenshot:C:\Users\gchand.NVIDIA.COM\.jenkins\workspace\shield2.1\shieldJan10th-gopi.zip_expanded\SanityChecks\screenshots VerfyShoppingInfoPanelIsDisplayed<br/>
+Error: Exception waitForElementPresent Proxy element for: DefaultElementLocator 'By.id: dr_shipping'<br/>
+Error: Web element scrolling issue Proxy element for: DefaultElementLocator 'By.id: dr_shipping'<br/>
+Info: webElementIsDisplayed Proxy element for: DefaultElementLocator 'By.id: dr_shipping'<br/>
+Error: Exception in webElementIsDisplayed: Proxy element for: DefaultElementLocator 'By.id: dr_shipping'<br/>
+Info: waitForElementPresent success [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> xpath: .//*[@id='dr_siteButtons']/input[@class='dr_button']]<br/>
+info: buttonClick() [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> xpath: .//*[@id='dr_siteButtons']/input[@class='dr_button']]<br/>
+info: VerifyYourAddressPanelIsDisplayed()- VerifyYourAddress pop ups ha shown:<br/>
+Error: Exception waitForElementPresent Proxy element for: DefaultElementLocator 'By.id: dr_suggestionForm'<br/>
+Error: Web element scrolling issue Proxy element for: DefaultElementLocator 'By.id: dr_suggestionForm'<br/>
+Info: webElementIsDisplayed Proxy element for: DefaultElementLocator 'By.id: dr_suggestionForm'<br/>
+Error: Exception in webElementIsDisplayed: Proxy element for: DefaultElementLocator 'By.id: dr_suggestionForm'<br/>
+Error: Exception waitForElementPresent Proxy element for: DefaultElementLocator 'By.id: selectionButton'<br/>
+Error: Exception in buttonClick() Proxy element for: DefaultElementLocator 'By.id: selectionButton'<br/>
+Info:VerifyYourAddressPanelIsDisplayed(): <br/>
+Info:Shopping Information Panel Is Displayed<br/>
+</div>
+</td>
+<td></td>
+<td>428</td>
+<td>shield.enus.com.nvidia.www.javatests.DRCheckOutTests@5abca1e0</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.DRCheckOutTests.VerifyBillingAddress()'><b>VerifyBillingAddress</b><br>Test class: shield.enus.com.nvidia.www.javatests.DRCheckOutTests<br/>
+<a href="#Output-1934932165" onClick='toggleBox("Output-1934932165", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1934932165" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1934932165">
+Info: waitForElementPresent success [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> id: dr_billingContainer]<br/>
+info: Web element scrolling success [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> id: dr_billingContainer]<br/>
+Info: webElementIsDisplayed [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> id: dr_billingContainer]<br/>
+Info: Billing information has displayed<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>shield.enus.com.nvidia.www.javatests.DRCheckOutTests@5abca1e0</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.DRCheckOutTests.VerifyOrderNumber()'><b>VerifyOrderNumber</b><br>Test class: shield.enus.com.nvidia.www.javatests.DRCheckOutTests<br/>
+<a href="#Output-1261198850" onClick='toggleBox("Output-1261198850", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1261198850" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1261198850">
+Info: Order number: Order: 13259099959<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>shield.enus.com.nvidia.www.javatests.DRCheckOutTests@5abca1e0</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.DRCheckOutTests.VerifyOrderpanel()'><b>VerifyOrderpanel</b><br>Test class: shield.enus.com.nvidia.www.javatests.DRCheckOutTests<br/>
+<a href="#Output-1168420930" onClick='toggleBox("Output-1168420930", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1168420930" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1168420930">
+Info: waitForElementPresent success [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> id: dr_ConfirmOrder]<br/>
+info: Web element scrolling success [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> id: dr_ConfirmOrder]<br/>
+Info: webElementIsDisplayed [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> id: dr_ConfirmOrder]<br/>
+Verify order page is displayed as expected<br/>
+refer this screenshot:C:\Users\gchand.NVIDIA.COM\.jenkins\workspace\shield2.1\shieldJan10th-gopi.zip_expanded\SanityChecks\screenshots VerifyOrderpanel<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>shield.enus.com.nvidia.www.javatests.DRCheckOutTests@5abca1e0</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.DRCheckOutTests.VerifyProduct()'><b>VerifyProduct</b><br>Test class: shield.enus.com.nvidia.www.javatests.DRCheckOutTests<br>Parameters: 5088793700<br/>
+<a href="#Output-1766911337" onClick='toggleBox("Output-1766911337", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1766911337" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1766911337">
+NVIDIA® SHIELD™ TV<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>shield.enus.com.nvidia.www.javatests.DRCheckOutTests@5abca1e0</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.DRCheckOutTests.VerifynavigationfromCartandBillingpageToShippingInfopage()'><b>VerifynavigationfromCartandBillingpageToShippingInfopage</b><br>Test class: shield.enus.com.nvidia.www.javatests.DRCheckOutTests<br>Parameters: 4444333322221111, 123<br/>
+<a href="#Output-1438988851" onClick='toggleBox("Output-1438988851", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1438988851" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1438988851">
+Info: waitForElementPresent success [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> xpath: .//*[@id='dr_siteButtons']/input[@class='dr_button']]<br/>
+info: buttonClick() [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> xpath: .//*[@id='dr_siteButtons']/input[@class='dr_button']]<br/>
+info: VerifyYourAddressPanelIsDisplayed()- VerifyYourAddress pop ups ha shown:<br/>
+Info: waitForElementPresent success [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> id: dr_suggestionForm]<br/>
+info: Web element scrolling success [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> id: dr_suggestionForm]<br/>
+Info: webElementIsDisplayed [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> id: dr_suggestionForm]<br/>
+Info: waitForElementPresent success [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> id: selectionButton]<br/>
+info: buttonClick() [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> id: selectionButton]<br/>
+Info:VerifyYourAddressPanelIsDisplayed(): <br/>
+Info:Navigated from cart and billing page to shipping page <br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>shield.enus.com.nvidia.www.javatests.DRCheckOutTests@5abca1e0</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.AddToCartTestCases.addProductToCart()'><b>addProductToCart</b><br>Test class: shield.enus.com.nvidia.www.javatests.AddToCartTestCases<br>Parameters: 5088793700<br/>
+<a href="#Output-1802066694" onClick='toggleBox("Output-1802066694", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1802066694" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1802066694">
+info: Web element scrolling success [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> xpath: .//div[starts-with(@class,'product-row__item js-product-item') and @data-digital-river-id='5088793700']/div[2]/a]<br/>
+Info: Button call to action works as expected<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>shield.enus.com.nvidia.www.javatests.AddToCartTestCases@335eadca</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.AddToCartTestCases.specificProductCheckout()'><b>specificProductCheckout</b><br>Test class: shield.enus.com.nvidia.www.javatests.AddToCartTestCases<br>Parameters: 5088793700<br/>
+<a href="#Output-467796378" onClick='toggleBox("Output-467796378", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-467796378" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-467796378">
+info: Web element scrolling success [[FirefoxDriver: firefox on XP (5317fcac-38fa-46cb-b72e-27f15feb2250)] -> xpath: .//div[starts-with(@class,'product-row__item js-product-item') and @data-digital-river-id='5088793700']/div[2]/a]<br/>
+Info: Button call to action works as expected<br/>
+refer this screenshot:C:\Users\gchand.NVIDIA.COM\.jenkins\workspace\shield2.1\shieldJan10th-gopi.zip_expanded\SanityChecks\screenshots closeDRPreOrderPopup<br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>shield.enus.com.nvidia.www.javatests.AddToCartTestCases@335eadca</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyButtonText()'><b>verifyButtonText</b><br>Test class: shield.enus.com.nvidia.www.javatests.AddToCartTestCases<br>Parameters: 5088793700, Add to Cart<br/>
+<a href="#Output-2052910813" onClick='toggleBox("Output-2052910813", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2052910813" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2052910813">
+productID: 5088793700 provided buttonText: Add to Cart Actual Button Text: ADD TO CART<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>shield.enus.com.nvidia.www.javatests.AddToCartTestCases@335eadca</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartClose()'><b>verifyCartClose</b><br>Test class: shield.enus.com.nvidia.www.javatests.AddToCartTestCases<br/>
+<a href="#Output-136393487" onClick='toggleBox("Output-136393487", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-136393487" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-136393487">
+ Clicked the Cart pop-up <br/>
+Cart pop-up is closed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>shield.enus.com.nvidia.www.javatests.AddToCartTestCases@335eadca</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartCounterUpdate()'><b>verifyCartCounterUpdate</b><br>Test class: shield.enus.com.nvidia.www.javatests.AddToCartTestCases<br/>
+<a href="#Output-1440621772" onClick='toggleBox("Output-1440621772", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1440621772" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1440621772">
+Cart Counter has updated once added the product <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>shield.enus.com.nvidia.www.javatests.AddToCartTestCases@335eadca</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartEmptymessage()'><b>verifyCartEmptymessage</b><br>Test class: shield.enus.com.nvidia.www.javatests.AddToCartTestCases<br>Parameters: 5088793700<br/>
+<a href="#Output-1795816257" onClick='toggleBox("Output-1795816257", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1795816257" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1795816257">
+product has remvoed from cart<br/>
+Empty message is shows as expected <br/>
+Empty message from Cart: Your cart is empty<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>shield.enus.com.nvidia.www.javatests.AddToCartTestCases@335eadca</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartOverLayPopup()'><b>verifyCartOverLayPopup</b><br>Test class: shield.enus.com.nvidia.www.javatests.AddToCartTestCases<br>Parameters: 5088793700<br/>
+<a href="#Output-1125964210" onClick='toggleBox("Output-1125964210", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1125964210" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1125964210">
+Info: Cart overLay pop-up shows after added the product<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>shield.enus.com.nvidia.www.javatests.AddToCartTestCases@335eadca</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountDeCrease()'><b>verifyCartProductCountDeCrease</b><br>Test class: shield.enus.com.nvidia.www.javatests.AddToCartTestCases<br>Parameters: 5088793700<br/>
+<a href="#Output-76659128" onClick='toggleBox("Output-76659128", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-76659128" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-76659128">
+product count is  decreased as expected<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>shield.enus.com.nvidia.www.javatests.AddToCartTestCases@335eadca</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountIncrease()'><b>verifyCartProductCountIncrease</b><br>Test class: shield.enus.com.nvidia.www.javatests.AddToCartTestCases<br>Parameters: 5088793700<br/>
+<a href="#Output-635371680" onClick='toggleBox("Output-635371680", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-635371680" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-635371680">
+product count is  increased as expected<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>shield.enus.com.nvidia.www.javatests.AddToCartTestCases@335eadca</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartSubTotal()'><b>verifyCartSubTotal</b><br>Test class: shield.enus.com.nvidia.www.javatests.AddToCartTestCases<br>Parameters: 5088793700<br/>
+<a href="#Output-1787189503" onClick='toggleBox("Output-1787189503", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1787189503" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1787189503">
+Cart Product total shows as expected <br/>
+1<br/>
+NVIDIA® SHIELD™ TV
+Remove<br/>
+$ 199.99<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>shield.enus.com.nvidia.www.javatests.AddToCartTestCases@335eadca</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartTotalAmout()'><b>verifyCartTotalAmout</b><br>Test class: shield.enus.com.nvidia.www.javatests.AddToCartTestCases<br/>
+<a href="#Output-223693919" onClick='toggleBox("Output-223693919", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-223693919" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-223693919">
+Cart totla amount shows as expected$ 199.99<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>shield.enus.com.nvidia.www.javatests.AddToCartTestCases@335eadca</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyPrice()'><b>verifyPrice</b><br>Test class: shield.enus.com.nvidia.www.javatests.AddToCartTestCases<br>Parameters: 5088793700, $ 199.99<br/>
+<a href="#Output-1823541245" onClick='toggleBox("Output-1823541245", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1823541245" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1823541245">
+productID: 5088793700 provided buttonText: $ 199.99 Actual Button Text: $ 199.99<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>shield.enus.com.nvidia.www.javatests.AddToCartTestCases@335eadca</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyProductAddedToCart()'><b>verifyProductAddedToCart</b><br>Test class: shield.enus.com.nvidia.www.javatests.AddToCartTestCases<br>Parameters: 5088793700<br/>
+<a href="#Output-1471948789" onClick='toggleBox("Output-1471948789", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1471948789" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1471948789">
+Product is added to cart as expected <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>shield.enus.com.nvidia.www.javatests.AddToCartTestCases@335eadca</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyRemoveProductFromCart()'><b>verifyRemoveProductFromCart</b><br>Test class: shield.enus.com.nvidia.www.javatests.AddToCartTestCases<br>Parameters: 5088793700<br/>
+<a href="#Output-11249189" onClick='toggleBox("Output-11249189", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-11249189" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-11249189">
+product has remvoed from cart<br/>
+Empty message is shows as expected <br/>
+Empty message from Cart: Your cart is empty<br/>
+Remove functionalites works as expected <br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>shield.enus.com.nvidia.www.javatests.AddToCartTestCases@335eadca</td></tr>
+</table><p>
+</body>
+</html>

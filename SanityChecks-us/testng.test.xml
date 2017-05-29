@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SHILED Add to cart flows validation in Firefox browser" verbose="5">
+       <parameter name="browsername" value="firefox"/>
+       <parameter name="path" value="C:\\temp\\"/>
+       
+       <listeners>
+         	<listener class-name="shield.enus.com.nvidia.www.genericlib.TestNGCustomReportListener" />
+       </listeners>
+       
+ <test name="Shield TV  Page, SHIELD STAND  product">
+			  <parameter name="home_url" value="https://www.nvidia.co.uk/shield/shield-tv/"/>		
+        	  <parameter name="productID" value="5088903700"/>
+        	  <parameter name="ButtonText" value="Add to Cart"/>
+        	  <parameter name="currencyValue" value="£19.99"/>
+		<classes>
+			 <class name="shield.enus.com.nvidia.www.javatests.StartBrowser"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.AddToCartTestCases">
+			 			 <methods>
+        						<include name="addProductToCart" />
+        						<include name="verifyButtonText" />
+        						<include name="verifyPrice" />
+        						<include name="verifyCartOverLayPopup" />
+        						<include name="verifyProductAddedToCart" />
+        						<include name="verifyCartTotalAmout" />
+        						<include name="verifyCartSubTotal" />
+        						<include name="verifyCartCounterUpdate" />
+        						<include name="verifyCartProductCountIncrease" />
+        						<include name="verifyCartProductCountDeCrease" />
+        						<include name="verifyRemoveProductFromCart"/>
+        						<include name="verifyCartEmptymessage" />
+        						<include name="verifyCartClose" />
+	        					<exclude name="verifyCheckout" />
+    					  </methods>
+    				</class>
+			 <class name="shield.enus.com.nvidia.www.javatests.CloseBrowser"> </class>			
+    	</classes>
+    	
+      </test> 
+      
+
+      
+     	   
+        </suite> <!-- Suite -->
+
+ 

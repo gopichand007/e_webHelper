@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ Pescal Live site Sanity Checks in Firefox browser]">
+  <parameter name="home_url" value="https://www.nvidia.com/en-us/geforce/products/10series/geforce-gtx-1080/"/>
+  <parameter name="browsername" value="firefox"/>
+  <test name="PascalSite Titan Product(failed)">
+    <parameter name="home_url" value="https://www.nvidia.com/en-us/geforce/products/10series/geforce-gtx-1080/"/>
+    <classes>
+      <class name="shield.enus.com.nvidia.www.javatests.CloseBrowser">
+        <methods>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- shield.enus.com.nvidia.www.javatests.CloseBrowser -->
+      <class name="shield.enus.com.nvidia.www.javatests.StartBrowser">
+        <methods>
+          <include name="browserInitiation"/>
+        </methods>
+      </class> <!-- shield.enus.com.nvidia.www.javatests.StartBrowser -->
+      <class name="shield.enus.com.nvidia.www.javatests.PascalAddToCartTests">
+        <methods>
+          <include name="verifyCartEmptymessage"/>
+          <include name="verifyCheckoutFlow"/>
+          <include name="VerifyCartOverLayPopup"/>
+          <include name="VerifyTitanProductIsAddedToCartOrnot"/>
+          <include name="verifyCartProductCountIncrease"/>
+          <include name="verifyCartSubTotal"/>
+          <include name="verifyCartTotalAmout"/>
+          <include name="verifyRemoveProductFromCart"/>
+          <include name="verifyCartProductCountDeCrease"/>
+          <include name="verifyProductAddedToCart"/>
+        </methods>
+      </class> <!-- shield.enus.com.nvidia.www.javatests.PascalAddToCartTests -->
+    </classes>
+  </test> <!-- PascalSite Titan Product(failed) -->
+</suite> <!-- Failed suite [ Pescal Live site Sanity Checks in Firefox browser] -->

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [SHILED Add to cart flows validation in DE locale]">
+  <parameter name="path" value="C:\\temp\\"/>
+  <parameter name="browsername" value="firefox"/>
+  <listeners>
+    <listener class-name="shield.enus.com.nvidia.www.genericlib.TestNGCustomReportListener"/>
+  </listeners>
+  <test name="Shield Home Page, SHIELD  Tablet K1(failed)">
+    <parameter name="productID" value="327801100"/>
+    <parameter name="home_url" value="https://www.nvidia.de/shield/"/>
+    <parameter name="currencyValue" value="€199.99"/>
+    <parameter name="ButtonText" value="IN DEN EINKAUFSWAGEN"/>
+    <classes>
+      <class name="shield.enus.com.nvidia.www.javatests.AddToCartTestCases">
+        <methods>
+          <include name="verifyCartCounterUpdate"/>
+          <include name="verifyCartSubTotal" invocation-numbers="0"/>
+          <include name="verifyCartTotalAmout"/>
+          <include name="verifyCartProductCountIncrease" invocation-numbers="0"/>
+          <include name="verifyCartProductCountDeCrease" invocation-numbers="0"/>
+          <include name="verifyProductAddedToCart" invocation-numbers="0"/>
+          <include name="verifyCartEmptymessage" invocation-numbers="0"/>
+          <include name="verifyCartOverLayPopup" invocation-numbers="0"/>
+          <include name="verifyCartClose"/>
+          <include name="verifyButtonText" invocation-numbers="0"/>
+          <include name="verifyRemoveProductFromCart" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- shield.enus.com.nvidia.www.javatests.AddToCartTestCases -->
+    </classes>
+  </test> <!-- Shield Home Page, SHIELD  Tablet K1(failed) -->
+  <test name="Shield TV  Page, SHIELD Pro stand  product(failed)">
+    <parameter name="productID" value="5088905400"/>
+    <parameter name="home_url" value="https://www.nvidia.de/shield/shield-tv/"/>
+    <parameter name="currencyValue" value="€34.99"/>
+    <parameter name="ButtonText" value="AIN DEN EINKAUFSWAGEN"/>
+    <classes>
+      <class name="shield.enus.com.nvidia.www.javatests.AddToCartTestCases">
+        <methods>
+          <include name="verifyButtonText" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- shield.enus.com.nvidia.www.javatests.AddToCartTestCases -->
+    </classes>
+  </test> <!-- Shield TV  Page, SHIELD Pro stand  product(failed) -->
+  <test name="AI HOME Page, SHIELD  pro product(failed)">
+    <parameter name="imageName" value="de_AI_home-checkout"/>
+    <parameter name="productID" value="5088794700"/>
+    <parameter name="home_url" value="hhttps://www.nvidia.de/shield/smart-home/"/>
+    <parameter name="currencyValue" value="€329.99"/>
+    <parameter name="ButtonText" value="IN DEN EINKAUFSWAGEN"/>
+    <classes>
+      <class name="shield.enus.com.nvidia.www.javatests.AddToCartTestCases">
+        <methods>
+          <include name="verifyCartSubTotal" invocation-numbers="0"/>
+          <include name="verifyCartProductCountIncrease" invocation-numbers="0"/>
+          <include name="verifyCartEmptymessage" invocation-numbers="0"/>
+          <include name="verifyCartOverLayPopup" invocation-numbers="0"/>
+          <include name="verifyCartClose"/>
+          <include name="verifyCartCounterUpdate"/>
+          <include name="verifyCartTotalAmout"/>
+          <include name="verifyPrice" invocation-numbers="0"/>
+          <include name="verifyCartProductCountDeCrease" invocation-numbers="0"/>
+          <include name="verifyProductAddedToCart" invocation-numbers="0"/>
+          <include name="addProductToCart" invocation-numbers="0"/>
+          <include name="verifyButtonText" invocation-numbers="0"/>
+          <include name="verifyRemoveProductFromCart" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- shield.enus.com.nvidia.www.javatests.AddToCartTestCases -->
+    </classes>
+  </test> <!-- AI HOME Page, SHIELD  pro product(failed) -->
+</suite> <!-- Failed suite [SHILED Add to cart flows validation in DE locale] -->

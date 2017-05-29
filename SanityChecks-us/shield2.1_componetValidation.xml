@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SHILED and Pasal Live site Sanity Checks in Firefox browser">
+       <parameter name="browsername" value="firefox"/>
+     
+		
+   
+       <test name="Shield Home Page">
+			  <parameter name="home_url" value="https://www.nvidia.com/en-us/shield/"/>		
+
+        <parameter name="productID" value="5088793700"/>
+		<classes>
+			 <class name="shield.enus.com.nvidia.www.javatests.StartBrowser"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.VideoCompnentTestCases"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.ColumnComponentTestCases">
+			 <methods>
+        	 <include name="verifyAllLeftColumn" />
+        	 <include name="verifyAllRightColumn" />
+        	 <exclude name="verifyAllThreeColumn" />
+     		 </methods>
+     		 </class>
+     		 <class name="shield.enus.com.nvidia.www.javatests.HeaderAndFooterTestCases"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.AddToCartTestCases"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.LinkValidator"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.CloseBrowser"> </class>			
+    	</classes>
+      </test> <!-- Test -->
+      
+        <test name="Shield Shield-TV Page">
+        <parameter name="home_url" value="https://www.nvidia.com/en-us/shield/shield-tv/"/>
+        <parameter name="productID" value="5088793700"/>
+		<classes>
+			 <class name="shield.enus.com.nvidia.www.javatests.StartBrowser"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.VideoCompnentTestCases"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.ColumnComponentTestCases"> 
+			 <methods>
+        	 <include name="verifyAllLeftColumn" />
+        	 <include name="verifyAllRightColumn" />
+        	 <include name="verifyAllThreeColumn" />
+     		 </methods>
+     		 </class>
+     		 <class name="shield.enus.com.nvidia.www.javatests.HeaderAndFooterTestCases"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.AddToCartTestCases"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.LinkValidator"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.CloseBrowser"> </class>			
+    	</classes>
+    	</test> <!-- Test --> 
+      
+    	
+        <test name="Shield Games Page">
+        <parameter name="home_url" value="https://www.nvidia.com/en-us/shield/games/"/>
+        <parameter name="productID" value="5088793700"/>
+		<classes>
+			 <class name="shield.enus.com.nvidia.www.javatests.StartBrowser"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.VideoCompnentTestCases"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.ColumnComponentTestCases"> 
+			 <methods>
+        	 <include name="verifyAllLeftColumn" />
+        	 <include name="verifyAllRightColumn" />
+        	 <exclude name="verifyAllThreeColumn" />
+     		 </methods>
+     		 </class>
+     		 <class name="shield.enus.com.nvidia.www.javatests.HeaderAndFooterTestCases"> </class>
+     		 <class name="shield.enus.com.nvidia.www.javatests.LinkValidator"> </class>
+     		 <class name="shield.enus.com.nvidia.www.javatests.CloseBrowser"> </class>			
+    	</classes>
+     	</test> <!-- Test -->
+     	
+     	        <test name="Shield Apps Page">
+        <parameter name="home_url" value="https://www.nvidia.com/en-us/shield/apps/"/>
+        <parameter name="productID" value="5088793700"/>
+		<classes>
+			 <class name="shield.enus.com.nvidia.www.javatests.StartBrowser"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.VideoCompnentTestCases"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.ColumnComponentTestCases"> 
+			 <methods>
+        	 <include name="verifyAllLeftColumn" />
+        	 <include name="verifyAllRightColumn" />
+        	 <exclude name="verifyAllThreeColumn" />
+     		 </methods>
+     		 </class>
+     		 <class name="shield.enus.com.nvidia.www.javatests.HeaderAndFooterTestCases"> </class>
+     		 <class name="shield.enus.com.nvidia.www.javatests.LinkValidator"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.CloseBrowser"> </class>			
+    	</classes>
+     	</test> <!-- Test -->  
+     	
+     	     	        <test name="Shield Smart Home Page">
+        <parameter name="home_url" value="https://www.nvidia.com/en-us/shield/smart-home/"/>
+        <parameter name="productID" value="5088793700"/>
+		<classes>
+			 <class name="shield.enus.com.nvidia.www.javatests.StartBrowser"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.VideoCompnentTestCases"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.ColumnComponentTestCases"> 
+			 <methods>
+        	 <include name="verifyAllLeftColumn" />
+        	 <include name="verifyAllRightColumn" />
+        	 <exclude name="verifyAllThreeColumn" />
+     		 </methods>
+     		 </class>
+     		 <class name="shield.enus.com.nvidia.www.javatests.HeaderAndFooterTestCases"> </class>
+     		 <class name="shield.enus.com.nvidia.www.javatests.LinkValidator"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.CloseBrowser"> </class>			
+    	</classes>
+     	</test> <!-- Test -->  
+     	
+     	
+     	 <!--  <test name="Pascal Titan X Add To cart Checkout">
+        <parameter name="home_url" value="https://www.nvidia.com/en-us/geforce/products/10series/titan-x-pascal/"/>
+        <parameter name="productID" value="5088793700"/>
+		<classes>
+			 <class name="shield.enus.com.nvidia.www.javatests.StartBrowser"> </class>
+			  <class name="shield.enus.com.nvidia.www.javatests.PascalAddToCartTests"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.CloseBrowser"> </class>			
+    	</classes>
+     	</test> --><!-- Test -->
+     	
+     	
+     	       <test name="PascalSite GeForce GTC 1080  Product">
+       <parameter name="home_url" value="https://www.nvidia.com/en-us/geforce/products/10series/geforce-gtx-1080/"/>
+       <parameter name="productID" value="2740204200"/>	
+		<classes>
+			 <class name="shield.enus.com.nvidia.www.javatests.StartBrowser"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.PascalAddToCartTests"> </class>	 
+			 <class name="shield.enus.com.nvidia.www.javatests.CloseBrowser"> </class>	
+    	</classes>
+      </test> <!-- Test -->
+      
+      
+             <test name="PascalSite GeForce GTC 1070  Product">
+       <parameter name="home_url" value="https://www.nvidia.com/en-us/geforce/products/10series/geforce-gtx-1080/"/>
+       <parameter name="productID" value="2740281000"/>	
+		<classes>
+			 <class name="shield.enus.com.nvidia.www.javatests.StartBrowser"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.PascalAddToCartTests"> </class>	 
+			 <class name="shield.enus.com.nvidia.www.javatests.CloseBrowser"> </class>	
+    	</classes>
+    	 </test> <!-- Test -->
+      
+      	             <test name="PascalSite GeForce GTC 1060  Product">
+       <parameter name="home_url" value="https://www.nvidia.com/en-us/geforce/products/10series/geforce-gtx-1080/"/>
+       <parameter name="productID" value="5056171200"/>	
+		<classes>
+			 <class name="shield.enus.com.nvidia.www.javatests.StartBrowser"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.PascalAddToCartTests"> </class>	 
+			 <class name="shield.enus.com.nvidia.www.javatests.CloseBrowser"> </class>	
+    	</classes>
+    	</test> <!-- Test -->
+     	
+     	
+     	   
+        </suite> <!-- Suite -->

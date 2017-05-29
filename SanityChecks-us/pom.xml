@@ -1,0 +1,144 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.selenium.shield</groupId>
+  <artifactId>shield</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+<dependencies>			
+				
+   <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-firefox-driver</artifactId>
+        <version>3.0.1</version>
+    </dependency> 
+    
+     <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>htmlunit-driver</artifactId>
+        <version>2.23</version>
+    </dependency> 
+    
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-server</artifactId>
+        <version>3.0.1</version>
+    </dependency>  
+     
+      <dependency>
+        <groupId>com.github.detro</groupId>
+        <artifactId>phantomjsdriver</artifactId>
+        <version>1.2.0</version>
+      </dependency>  
+    
+    				
+        <dependency>				
+            <groupId>org.testng</groupId>								
+            <artifactId>testng</artifactId>								
+            <version>6.11</version>															  			
+       </dependency>
+       
+  	 <dependency>
+   		 	<groupId>org.apache.logging.log4j</groupId>
+   		 	<artifactId>log4j-api</artifactId>
+    		<version>2.7</version>
+  	</dependency>
+   <dependency>
+   			 <groupId>org.apache.logging.log4j</groupId>
+    		 <artifactId>log4j-core</artifactId>
+  			 <version>2.7</version>
+  </dependency>
+      
+     <dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+	</dependency>
+      
+
+	
+	<dependency>
+    		<groupId>javax.mail</groupId>
+    		<artifactId>javax.mail-api</artifactId>
+    		<version>1.5.1</version>
+	</dependency>
+	
+	<dependency>
+    		<groupId>ru.yandex.qatools.ashot</groupId>
+    		<artifactId>ashot</artifactId>
+   			 <version>1.5.2</version>
+	</dependency>
+	
+	
+</dependencies>
+
+<build>
+        <plugins>
+          	<plugin>
+        		<groupId>org.apache.maven.plugins</groupId>
+        		<artifactId>maven-compiler-plugin</artifactId>
+        		<version>2.3.2</version>
+        		<configuration>
+          			<source>1.7</source>
+          			<target>1.7</target>
+       			</configuration>
+      		</plugin>
+           
+		     <plugin>
+		          <groupId>org.apache.maven.plugins</groupId>
+		          <artifactId>maven-surefire-plugin</artifactId>
+		          <version>2.19.1</version>
+		          <inherited>true</inherited>
+		          <configuration>
+		          		<suiteXmlFiles>
+		          			<suiteXmlFile>testng.xml</suiteXmlFile>
+		          			<suiteXmlFile>testng-uk.xml</suiteXmlFile>
+		          			<suiteXmlFile>testng-it.xml</suiteXmlFile>
+		          			<suiteXmlFile>testng-fr.xml</suiteXmlFile>
+		          			<suiteXmlFile>testng-de.xml</suiteXmlFile>
+		          			<suiteXmlFile>testng-nl.xml</suiteXmlFile>
+		          			<suiteXmlFile>testng-se.xml</suiteXmlFile>
+		          			<suiteXmlFile>testng-no.xml</suiteXmlFile>
+		          			<!-- <suiteXmlFile>testng.temp.xml</suiteXmlFile>  --> 
+		          			
+		          		</suiteXmlFiles>
+				  </configuration>
+		       </plugin>
+		       
+        </plugins>
+        <pluginManagement>
+        	<plugins>
+        		<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+        		<plugin>
+        			<groupId>org.eclipse.m2e</groupId>
+        			<artifactId>lifecycle-mapping</artifactId>
+        			<version>1.0.0</version>
+        			<configuration>
+        				<lifecycleMappingMetadata>
+        					<pluginExecutions>
+        						<pluginExecution>
+        							<pluginExecutionFilter>
+        								<groupId>
+        									org.apache.maven.plugins
+        								</groupId>
+        								<artifactId>
+        									maven-compiler-plugin
+        								</artifactId>
+        								<versionRange>
+        									[2.3.2,)
+        								</versionRange>
+        								<goals>
+        									<goal>testCompile</goal>
+        								</goals>
+        							</pluginExecutionFilter>
+        							<action>
+        								<ignore></ignore>
+        							</action>
+        						</pluginExecution>
+        					</pluginExecutions>
+        				</lifecycleMappingMetadata>
+        			</configuration>
+        		</plugin>
+        	</plugins>
+        </pluginManagement>
+</build>
+      
+</project>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DR checkout flow Firefox browser]">
+  <parameter name="cvv" value="123"/>
+  <parameter name="imageName" value="shieldHome-checkout"/>
+  <parameter name="productID" value="5088793700"/>
+  <parameter name="home_url" value="https://www.nvidia.com/en-us/shield/"/>
+  <parameter name="gc_password" value="Nvidi@2016"/>
+  <parameter name="browsername" value="firefox"/>
+  <parameter name="gc_prodcutURL" value="http://gc.digitalriver.com/store/nvidia/en_US/buy/productID.5087552300/quantity.1"/>
+  <parameter name="gcurlloginurl" value="https://gc.digitalriver.com/gc/ent/login.do"/>
+  <parameter name="ButtonText" value="Add to Cart"/>
+  <parameter name="path" value="C:\\temp\\"/>
+  <parameter name="emailAddress" value="gopihy+1@gmail.com"/>
+  <parameter name="password" value="Nv@123456"/>
+  <parameter name="gc_userName" value="rprasad"/>
+  <parameter name="currencyValue" value="$ 199.99"/>
+  <parameter name="creditCardNumber" value="4444333322221111"/>
+  <test name=" NVIDIA SHIELD TV(failed)">
+    <parameter name="cvv" value="123"/>
+    <parameter name="imageName" value="shieldHome-checkout"/>
+    <parameter name="productID" value="5088793700"/>
+    <parameter name="home_url" value="https://www.nvidia.com/en-us/shield/"/>
+    <parameter name="gc_password" value="Nvidi@2016"/>
+    <parameter name="gc_prodcutURL" value="http://gc.digitalriver.com/store/nvidia/en_US/buy/productID.5087552300/quantity.1"/>
+    <parameter name="gcurlloginurl" value="https://gc.digitalriver.com/gc/ent/login.do"/>
+    <parameter name="ButtonText" value="Add to Cart"/>
+    <parameter name="emailAddress" value="gopihy+1@gmail.com"/>
+    <parameter name="password" value="Nv@123456"/>
+    <parameter name="gc_userName" value="rprasad"/>
+    <parameter name="currencyValue" value="$ 199.99"/>
+    <parameter name="creditCardNumber" value="4444333322221111"/>
+    <classes>
+      <class name="shield.enus.com.nvidia.www.javatests.DRCheckOutTests">
+        <methods>
+          <include name="InitialProductCount" invocation-numbers="0"/>
+          <include name="VerfyCandyRack"/>
+          <include name="VerifyBillingAddress"/>
+          <include name="VerfyShoppingInfoPanelIsDisplayed"/>
+          <include name="VerifynavigationfromCartandBillingpageToShippingInfopage" invocation-numbers="0"/>
+          <include name="ValidLogin" invocation-numbers="0"/>
+          <include name="VerifyOrderpanel"/>
+          <include name="VerifyProduct" invocation-numbers="0"/>
+          <include name="VerifyOrderNumber"/>
+          <include name="VerfyPaymentInfo"/>
+        </methods>
+      </class> <!-- shield.enus.com.nvidia.www.javatests.DRCheckOutTests -->
+      <class name="shield.enus.com.nvidia.www.javatests.CloseBrowser">
+        <methods>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- shield.enus.com.nvidia.www.javatests.CloseBrowser -->
+      <class name="shield.enus.com.nvidia.www.javatests.StartBrowser">
+        <methods>
+          <include name="browserInitiation"/>
+        </methods>
+      </class> <!-- shield.enus.com.nvidia.www.javatests.StartBrowser -->
+      <class name="shield.enus.com.nvidia.www.javatests.AddToCartTestCases">
+        <methods>
+          <include name="verifyCartSubTotal" invocation-numbers="0"/>
+          <include name="verifyCartProductCountIncrease" invocation-numbers="0"/>
+          <include name="verifyCartEmptymessage" invocation-numbers="0"/>
+          <include name="specificProductCheckout" invocation-numbers="0"/>
+          <include name="verifyCartOverLayPopup" invocation-numbers="0"/>
+          <include name="verifyCartClose"/>
+          <include name="verifyCartCounterUpdate"/>
+          <include name="verifyCartTotalAmout"/>
+          <include name="verifyPrice" invocation-numbers="0"/>
+          <include name="verifyCartProductCountDeCrease" invocation-numbers="0"/>
+          <include name="verifyProductAddedToCart" invocation-numbers="0"/>
+          <include name="addProductToCart" invocation-numbers="0"/>
+          <include name="verifyButtonText" invocation-numbers="0"/>
+          <include name="verifyRemoveProductFromCart" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- shield.enus.com.nvidia.www.javatests.AddToCartTestCases -->
+    </classes>
+  </test> <!--  NVIDIA SHIELD TV(failed) -->
+</suite> <!-- Failed suite [DR checkout flow Firefox browser] -->

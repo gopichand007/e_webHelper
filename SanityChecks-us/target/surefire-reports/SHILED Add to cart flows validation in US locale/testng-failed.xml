@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [SHILED Add to cart flows validation in US locale]">
+  <parameter name="path" value="C:\\temp\\"/>
+  <parameter name="browsername" value="firefox"/>
+  <test name="Pascal Titan X Add To cart Checkout(failed)">
+    <parameter name="productID" value="5060742400"/>
+    <parameter name="home_url" value="https://www.nvidia.com/en-us/geforce/products/10series/titan-x-pascal/#forceLocation=US"/>
+    <classes>
+      <class name="shield.enus.com.nvidia.www.javatests.PascalAddToCartTests">
+        <methods>
+          <include name="verifyCartEmptymessage"/>
+          <include name="verifyCheckoutFlow"/>
+          <include name="VerifyCartOverLayPopup"/>
+          <include name="verifyCartProductCountIncrease"/>
+          <include name="verifyCartSubTotal"/>
+          <include name="verifyCartTotalAmout"/>
+          <include name="verifyRemoveProductFromCart"/>
+          <include name="verifyCartProductCountDeCrease"/>
+          <include name="verifyProductAddedToCart" invocation-numbers="0"/>
+          <include name="VerifyProductIsAddedToCartOrnot"/>
+        </methods>
+      </class> <!-- shield.enus.com.nvidia.www.javatests.PascalAddToCartTests -->
+    </classes>
+  </test> <!-- Pascal Titan X Add To cart Checkout(failed) -->
+  <test name="Pascal 2 SLOT SLI  Checkout(failed)">
+    <parameter name="productID" value="2032108300"/>
+    <parameter name="home_url" value="https://www.nvidia.com/en-us/geforce/products/10series/titan-x-pascal/#forceLocation=US"/>
+    <classes>
+      <class name="shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases">
+        <methods>
+          <include name="VerifyProductIsAddedToCartOrnot" invocation-numbers="0"/>
+          <include name="verifyCartProductCountDeCrease"/>
+          <include name="verifyProductAddedToCart" invocation-numbers="0"/>
+          <include name="verifyCartSubTotal"/>
+          <include name="verifyCartTotalAmout"/>
+          <include name="VerifyCartOverLayPopup"/>
+          <include name="verifyCartProductCountIncrease"/>
+          <include name="verifyCheckoutFlow"/>
+          <include name="verifyRemoveProductFromCart"/>
+          <include name="verifyCartEmptymessage" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases -->
+    </classes>
+  </test> <!-- Pascal 2 SLOT SLI  Checkout(failed) -->
+  <test name="Pascal 3 SLOT SLI  Checkout(failed)">
+    <parameter name="productID" value="2032108400"/>
+    <parameter name="home_url" value="https://www.nvidia.com/en-us/geforce/products/10series/titan-x-pascal/#forceLocation=US"/>
+    <classes>
+      <class name="shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases">
+        <methods>
+          <include name="VerifyProductIsAddedToCartOrnot" invocation-numbers="0"/>
+          <include name="verifyCartProductCountDeCrease"/>
+          <include name="verifyProductAddedToCart" invocation-numbers="0"/>
+          <include name="verifyCartSubTotal"/>
+          <include name="verifyCartTotalAmout"/>
+          <include name="VerifyCartOverLayPopup"/>
+          <include name="verifyCartProductCountIncrease"/>
+          <include name="verifyCheckoutFlow"/>
+          <include name="verifyRemoveProductFromCart"/>
+          <include name="verifyCartEmptymessage" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases -->
+    </classes>
+  </test> <!-- Pascal 3 SLOT SLI  Checkout(failed) -->
+  <test name="Pascal 4 SLOT SLI  Checkout(failed)">
+    <parameter name="productID" value="2032108500"/>
+    <parameter name="home_url" value="https://www.nvidia.com/en-us/geforce/products/10series/titan-x-pascal/#forceLocation=US"/>
+    <classes>
+      <class name="shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases">
+        <methods>
+          <include name="verifyCartProductCountDeCrease"/>
+          <include name="verifyCartProductCountIncrease"/>
+          <include name="verifyCheckoutFlow"/>
+          <include name="verifyRemoveProductFromCart"/>
+          <include name="verifyCartEmptymessage" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases -->
+    </classes>
+  </test> <!-- Pascal 4 SLOT SLI  Checkout(failed) -->
+</suite> <!-- Failed suite [SHILED Add to cart flows validation in US locale] -->

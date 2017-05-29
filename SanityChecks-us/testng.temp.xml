@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SHILED Add to cart flows validation in Firefox browser">
+       <parameter name="browsername" value="firefox"/>
+       <parameter name="path" value="C:\\temp\\"/>
+     
+		
+   
+       <test name="Shield Home Page, SHIELD product">
+			  	<parameter name="home_url" value="https://www.nvidia.com/en-us/shield/"/>
+			  	<parameter name="productID" value="5088793700"/>
+			  	<parameter name="ButtonText" value="Add to Cart"/>
+			  	<parameter name="currencyValue" value="$ 199.99"/>
+			  	<parameter name="imageName" value="shieldHome-checkout"/>
+			<classes>
+				 <class name="shield.enus.com.nvidia.www.javatests.StartBrowser"> </class>
+				 <class name="shield.enus.com.nvidia.www.javatests.AddToCartTestCases"> 
+							<methods>
+        						<include name="addProductToCart" />
+        						<include name="verifyButtonText" />
+        						<exclude name="verifyCheckout" />
+
+    					  </methods>
+    				</class>
+				 <class name="shield.enus.com.nvidia.www.javatests.CloseBrowser"> </class>			
+    		</classes>
+    	
+      </test>
+     
+
+     	   
+        </suite> 

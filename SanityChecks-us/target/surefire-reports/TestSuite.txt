@@ -1,0 +1,1192 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1228, Failures: 226, Errors: 0, Skipped: 0, Time elapsed: 4,582.504 sec <<< FAILURE! - in TestSuite
+VerifyProductIsAddedToCartOrnot(shield.enus.com.nvidia.www.javatests.PascalAddToCartTests)  Time elapsed: 12.029 sec  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at shield.enus.com.nvidia.www.javatests.PascalAddToCartTests.VerifyProductIsAddedToCartOrnot(PascalAddToCartTests.java:34)
+
+VerifyCartOverLayPopup(shield.enus.com.nvidia.www.javatests.PascalAddToCartTests)  Time elapsed: 0.029 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .cart_black.cart.cart--shown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.6pWXUTOPTqb2, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=7196, browserName=firefox, platformName=windows_nt}]
+Session ID: 9f980b22-42fb-426c-94be-a3dae2d4bd84
+*** Element info: {Using=css selector, value=.cart_black.cart.cart--shown}
+	at shield.enus.com.nvidia.www.javatests.PascalAddToCartTests.VerifyCartOverLayPopup(PascalAddToCartTests.java:68)
+
+verifyProductAddedToCart(shield.enus.com.nvidia.www.javatests.PascalAddToCartTests)  Time elapsed: 0.025 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .cart-item.cart-item--5060742400
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.6pWXUTOPTqb2, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=7196, browserName=firefox, platformName=windows_nt}]
+Session ID: 9f980b22-42fb-426c-94be-a3dae2d4bd84
+*** Element info: {Using=css selector, value=.cart-item.cart-item--5060742400}
+	at shield.enus.com.nvidia.www.javatests.PascalAddToCartTests.verifyProductAddedToCart(PascalAddToCartTests.java:80)
+
+verifyCartTotalAmout(shield.enus.com.nvidia.www.javatests.PascalAddToCartTests)  Time elapsed: 0.012 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .cart__total
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.6pWXUTOPTqb2, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=7196, browserName=firefox, platformName=windows_nt}]
+Session ID: 9f980b22-42fb-426c-94be-a3dae2d4bd84
+*** Element info: {Using=css selector, value=.cart__total}
+	at shield.enus.com.nvidia.www.javatests.PascalAddToCartTests.verifyCartTotalAmout(PascalAddToCartTests.java:92)
+
+verifyCartSubTotal(shield.enus.com.nvidia.www.javatests.PascalAddToCartTests)  Time elapsed: 0.011 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .cart-item__price
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.6pWXUTOPTqb2, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=7196, browserName=firefox, platformName=windows_nt}]
+Session ID: 9f980b22-42fb-426c-94be-a3dae2d4bd84
+*** Element info: {Using=css selector, value=.cart-item__price}
+	at shield.enus.com.nvidia.www.javatests.PascalAddToCartTests.verifyCartSubTotal(PascalAddToCartTests.java:106)
+
+verifyCartProductCountDeCrease(shield.enus.com.nvidia.www.javatests.PascalAddToCartTests)  Time elapsed: 5.021 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .quantity-selector__dec.js-cart-item-dec
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.6pWXUTOPTqb2, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=7196, browserName=firefox, platformName=windows_nt}]
+Session ID: 9f980b22-42fb-426c-94be-a3dae2d4bd84
+*** Element info: {Using=css selector, value=.quantity-selector__dec.js-cart-item-dec}
+	at shield.enus.com.nvidia.www.javatests.PascalAddToCartTests.verifyCartProductCountDeCrease(PascalAddToCartTests.java:118)
+
+verifyCartProductCountIncrease(shield.enus.com.nvidia.www.javatests.PascalAddToCartTests)  Time elapsed: 0.023 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .quantity-selector__inc.js-cart-item-inc
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.6pWXUTOPTqb2, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=7196, browserName=firefox, platformName=windows_nt}]
+Session ID: 9f980b22-42fb-426c-94be-a3dae2d4bd84
+*** Element info: {Using=css selector, value=.quantity-selector__inc.js-cart-item-inc}
+	at shield.enus.com.nvidia.www.javatests.PascalAddToCartTests.verifyCartProductCountIncrease(PascalAddToCartTests.java:131)
+
+verifyRemoveProductFromCart(shield.enus.com.nvidia.www.javatests.PascalAddToCartTests)  Time elapsed: 0.013 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .cart-item__remove.js-cart-item-remove
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.6pWXUTOPTqb2, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=7196, browserName=firefox, platformName=windows_nt}]
+Session ID: 9f980b22-42fb-426c-94be-a3dae2d4bd84
+*** Element info: {Using=css selector, value=.cart-item__remove.js-cart-item-remove}
+	at shield.enus.com.nvidia.www.javatests.PascalAddToCartTests.verifyRemoveProductFromCart(PascalAddToCartTests.java:145)
+
+verifyCartEmptymessage(shield.enus.com.nvidia.www.javatests.PascalAddToCartTests)  Time elapsed: 0.012 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .cart__empty
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.6pWXUTOPTqb2, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=7196, browserName=firefox, platformName=windows_nt}]
+Session ID: 9f980b22-42fb-426c-94be-a3dae2d4bd84
+*** Element info: {Using=css selector, value=.cart__empty}
+	at shield.enus.com.nvidia.www.javatests.PascalAddToCartTests.verifyCartEmptymessage(PascalAddToCartTests.java:157)
+
+verifyCheckoutFlow(shield.enus.com.nvidia.www.javatests.PascalAddToCartTests)  Time elapsed: 5.035 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .nv-button.js-checkout.cart__checkout-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.6pWXUTOPTqb2, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=7196, browserName=firefox, platformName=windows_nt}]
+Session ID: 9f980b22-42fb-426c-94be-a3dae2d4bd84
+*** Element info: {Using=css selector, value=.nv-button.js-checkout.cart__checkout-button}
+	at shield.enus.com.nvidia.www.javatests.PascalAddToCartTests.verifyCheckoutFlow(PascalAddToCartTests.java:172)
+
+VerifyProductIsAddedToCartOrnot(shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases)  Time elapsed: 19.22 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .cart_black.cart.cart--shown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.SdJe8jOLcvkL, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=10536, browserName=firefox, platformName=windows_nt}]
+Session ID: aef105c7-971e-46b6-be61-bf12feb6225b
+*** Element info: {Using=css selector, value=.cart_black.cart.cart--shown}
+	at shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases.VerifyProductIsAddedToCartOrnot(PascalSLIAddToCartTestCases.java:33)
+
+VerifyCartOverLayPopup(shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases)  Time elapsed: 0.006 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .cart_black.cart.cart--shown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.SdJe8jOLcvkL, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=10536, browserName=firefox, platformName=windows_nt}]
+Session ID: aef105c7-971e-46b6-be61-bf12feb6225b
+*** Element info: {Using=css selector, value=.cart_black.cart.cart--shown}
+	at shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases.VerifyCartOverLayPopup(PascalSLIAddToCartTestCases.java:42)
+
+verifyProductAddedToCart(shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases)  Time elapsed: 0.007 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .cart-item.cart-item--2032108300
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.SdJe8jOLcvkL, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=10536, browserName=firefox, platformName=windows_nt}]
+Session ID: aef105c7-971e-46b6-be61-bf12feb6225b
+*** Element info: {Using=css selector, value=.cart-item.cart-item--2032108300}
+	at shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases.verifyProductAddedToCart(PascalSLIAddToCartTestCases.java:54)
+
+verifyCartTotalAmout(shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases)  Time elapsed: 0.01 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .cart__total
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.SdJe8jOLcvkL, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=10536, browserName=firefox, platformName=windows_nt}]
+Session ID: aef105c7-971e-46b6-be61-bf12feb6225b
+*** Element info: {Using=css selector, value=.cart__total}
+	at shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases.verifyCartTotalAmout(PascalSLIAddToCartTestCases.java:66)
+
+verifyCartSubTotal(shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases)  Time elapsed: 0.005 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .cart-item__price
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.SdJe8jOLcvkL, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=10536, browserName=firefox, platformName=windows_nt}]
+Session ID: aef105c7-971e-46b6-be61-bf12feb6225b
+*** Element info: {Using=css selector, value=.cart-item__price}
+	at shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases.verifyCartSubTotal(PascalSLIAddToCartTestCases.java:80)
+
+verifyCartProductCountDeCrease(shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases)  Time elapsed: 5.028 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .quantity-selector__dec.js-cart-item-dec
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.SdJe8jOLcvkL, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=10536, browserName=firefox, platformName=windows_nt}]
+Session ID: aef105c7-971e-46b6-be61-bf12feb6225b
+*** Element info: {Using=css selector, value=.quantity-selector__dec.js-cart-item-dec}
+	at shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases.verifyCartProductCountDeCrease(PascalSLIAddToCartTestCases.java:92)
+
+verifyCartProductCountIncrease(shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases)  Time elapsed: 0.012 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .quantity-selector__inc.js-cart-item-inc
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.SdJe8jOLcvkL, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=10536, browserName=firefox, platformName=windows_nt}]
+Session ID: aef105c7-971e-46b6-be61-bf12feb6225b
+*** Element info: {Using=css selector, value=.quantity-selector__inc.js-cart-item-inc}
+	at shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases.verifyCartProductCountIncrease(PascalSLIAddToCartTestCases.java:105)
+
+verifyRemoveProductFromCart(shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases)  Time elapsed: 0.014 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .cart-item__remove.js-cart-item-remove
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.SdJe8jOLcvkL, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=10536, browserName=firefox, platformName=windows_nt}]
+Session ID: aef105c7-971e-46b6-be61-bf12feb6225b
+*** Element info: {Using=css selector, value=.cart-item__remove.js-cart-item-remove}
+	at shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases.verifyRemoveProductFromCart(PascalSLIAddToCartTestCases.java:119)
+
+verifyCartEmptymessage(shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases)  Time elapsed: 0.014 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .cart__empty
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.SdJe8jOLcvkL, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=10536, browserName=firefox, platformName=windows_nt}]
+Session ID: aef105c7-971e-46b6-be61-bf12feb6225b
+*** Element info: {Using=css selector, value=.cart__empty}
+	at shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases.verifyCartEmptymessage(PascalSLIAddToCartTestCases.java:131)
+
+verifyCheckoutFlow(shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases)  Time elapsed: 5.037 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .nv-button.js-checkout.cart__checkout-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.SdJe8jOLcvkL, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=10536, browserName=firefox, platformName=windows_nt}]
+Session ID: aef105c7-971e-46b6-be61-bf12feb6225b
+*** Element info: {Using=css selector, value=.nv-button.js-checkout.cart__checkout-button}
+	at shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases.verifyCheckoutFlow(PascalSLIAddToCartTestCases.java:146)
+
+VerifyProductIsAddedToCartOrnot(shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases)  Time elapsed: 19.522 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .cart_black.cart.cart--shown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.kzX4eJ61JDeY, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=2220, browserName=firefox, platformName=windows_nt}]
+Session ID: 1bebf4fa-a5ac-4cf5-a502-9974d44c04d1
+*** Element info: {Using=css selector, value=.cart_black.cart.cart--shown}
+	at shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases.VerifyProductIsAddedToCartOrnot(PascalSLIAddToCartTestCases.java:33)
+
+VerifyCartOverLayPopup(shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases)  Time elapsed: 0.007 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .cart_black.cart.cart--shown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.kzX4eJ61JDeY, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=2220, browserName=firefox, platformName=windows_nt}]
+Session ID: 1bebf4fa-a5ac-4cf5-a502-9974d44c04d1
+*** Element info: {Using=css selector, value=.cart_black.cart.cart--shown}
+	at shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases.VerifyCartOverLayPopup(PascalSLIAddToCartTestCases.java:42)
+
+verifyProductAddedToCart(shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases)  Time elapsed: 0.006 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .cart-item.cart-item--2032108400
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.kzX4eJ61JDeY, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=2220, browserName=firefox, platformName=windows_nt}]
+Session ID: 1bebf4fa-a5ac-4cf5-a502-9974d44c04d1
+*** Element info: {Using=css selector, value=.cart-item.cart-item--2032108400}
+	at shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases.verifyProductAddedToCart(PascalSLIAddToCartTestCases.java:54)
+
+verifyCartTotalAmout(shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases)  Time elapsed: 0.01 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .cart__total
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.kzX4eJ61JDeY, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=2220, browserName=firefox, platformName=windows_nt}]
+Session ID: 1bebf4fa-a5ac-4cf5-a502-9974d44c04d1
+*** Element info: {Using=css selector, value=.cart__total}
+	at shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases.verifyCartTotalAmout(PascalSLIAddToCartTestCases.java:66)
+
+verifyCartSubTotal(shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases)  Time elapsed: 0.005 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .cart-item__price
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.kzX4eJ61JDeY, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=2220, browserName=firefox, platformName=windows_nt}]
+Session ID: 1bebf4fa-a5ac-4cf5-a502-9974d44c04d1
+*** Element info: {Using=css selector, value=.cart-item__price}
+	at shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases.verifyCartSubTotal(PascalSLIAddToCartTestCases.java:80)
+
+verifyCartProductCountDeCrease(shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases)  Time elapsed: 5.01 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .quantity-selector__dec.js-cart-item-dec
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.kzX4eJ61JDeY, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=2220, browserName=firefox, platformName=windows_nt}]
+Session ID: 1bebf4fa-a5ac-4cf5-a502-9974d44c04d1
+*** Element info: {Using=css selector, value=.quantity-selector__dec.js-cart-item-dec}
+	at shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases.verifyCartProductCountDeCrease(PascalSLIAddToCartTestCases.java:92)
+
+verifyCartProductCountIncrease(shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases)  Time elapsed: 0.004 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .quantity-selector__inc.js-cart-item-inc
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.kzX4eJ61JDeY, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=2220, browserName=firefox, platformName=windows_nt}]
+Session ID: 1bebf4fa-a5ac-4cf5-a502-9974d44c04d1
+*** Element info: {Using=css selector, value=.quantity-selector__inc.js-cart-item-inc}
+	at shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases.verifyCartProductCountIncrease(PascalSLIAddToCartTestCases.java:105)
+
+verifyRemoveProductFromCart(shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases)  Time elapsed: 0.005 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .cart-item__remove.js-cart-item-remove
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.kzX4eJ61JDeY, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=2220, browserName=firefox, platformName=windows_nt}]
+Session ID: 1bebf4fa-a5ac-4cf5-a502-9974d44c04d1
+*** Element info: {Using=css selector, value=.cart-item__remove.js-cart-item-remove}
+	at shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases.verifyRemoveProductFromCart(PascalSLIAddToCartTestCases.java:119)
+
+verifyCartEmptymessage(shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases)  Time elapsed: 0.005 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .cart__empty
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.kzX4eJ61JDeY, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=2220, browserName=firefox, platformName=windows_nt}]
+Session ID: 1bebf4fa-a5ac-4cf5-a502-9974d44c04d1
+*** Element info: {Using=css selector, value=.cart__empty}
+	at shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases.verifyCartEmptymessage(PascalSLIAddToCartTestCases.java:131)
+
+verifyCheckoutFlow(shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases)  Time elapsed: 5.039 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .nv-button.js-checkout.cart__checkout-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.kzX4eJ61JDeY, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=2220, browserName=firefox, platformName=windows_nt}]
+Session ID: 1bebf4fa-a5ac-4cf5-a502-9974d44c04d1
+*** Element info: {Using=css selector, value=.nv-button.js-checkout.cart__checkout-button}
+	at shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases.verifyCheckoutFlow(PascalSLIAddToCartTestCases.java:146)
+
+verifyCartProductCountDeCrease(shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases)  Time elapsed: 5.015 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .quantity-selector__dec.js-cart-item-dec
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.k9E4hZ15DIJr, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=16624, browserName=firefox, platformName=windows_nt}]
+Session ID: f10bf2c1-d189-4d43-881c-7078156fde6e
+*** Element info: {Using=css selector, value=.quantity-selector__dec.js-cart-item-dec}
+	at shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases.verifyCartProductCountDeCrease(PascalSLIAddToCartTestCases.java:92)
+
+verifyCartProductCountIncrease(shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases)  Time elapsed: 0.01 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .quantity-selector__inc.js-cart-item-inc
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.k9E4hZ15DIJr, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=16624, browserName=firefox, platformName=windows_nt}]
+Session ID: f10bf2c1-d189-4d43-881c-7078156fde6e
+*** Element info: {Using=css selector, value=.quantity-selector__inc.js-cart-item-inc}
+	at shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases.verifyCartProductCountIncrease(PascalSLIAddToCartTestCases.java:105)
+
+verifyRemoveProductFromCart(shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases)  Time elapsed: 0.01 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .cart-item__remove.js-cart-item-remove
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.k9E4hZ15DIJr, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=16624, browserName=firefox, platformName=windows_nt}]
+Session ID: f10bf2c1-d189-4d43-881c-7078156fde6e
+*** Element info: {Using=css selector, value=.cart-item__remove.js-cart-item-remove}
+	at shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases.verifyRemoveProductFromCart(PascalSLIAddToCartTestCases.java:119)
+
+verifyCartEmptymessage(shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases)  Time elapsed: 0.01 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .cart__empty
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.k9E4hZ15DIJr, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=16624, browserName=firefox, platformName=windows_nt}]
+Session ID: f10bf2c1-d189-4d43-881c-7078156fde6e
+*** Element info: {Using=css selector, value=.cart__empty}
+	at shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases.verifyCartEmptymessage(PascalSLIAddToCartTestCases.java:131)
+
+verifyCheckoutFlow(shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases)  Time elapsed: 5.051 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .nv-button.js-checkout.cart__checkout-button
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.k9E4hZ15DIJr, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=16624, browserName=firefox, platformName=windows_nt}]
+Session ID: f10bf2c1-d189-4d43-881c-7078156fde6e
+*** Element info: {Using=css selector, value=.nv-button.js-checkout.cart__checkout-button}
+	at shield.enus.com.nvidia.www.javatests.PascalSLIAddToCartTestCases.verifyCheckoutFlow(PascalSLIAddToCartTestCases.java:146)
+
+verifyButtonText(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.017 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyButtonText(AddToCartTestCases.java:43)
+
+verifyCartOverLayPopup(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.12 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartOverLayPopup(AddToCartTestCases.java:61)
+
+verifyProductAddedToCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.006 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyProductAddedToCart(AddToCartTestCases.java:70)
+
+verifyCartTotalAmout(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.062 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartTotalAmout(AddToCartTestCases.java:78)
+
+verifyCartSubTotal(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.082 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartSubTotal(AddToCartTestCases.java:87)
+
+verifyCartCounterUpdate(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.014 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartCounterUpdate(AddToCartTestCases.java:94)
+
+verifyCartProductCountIncrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 6.24 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountIncrease(AddToCartTestCases.java:102)
+
+verifyCartProductCountDeCrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 6.265 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountDeCrease(AddToCartTestCases.java:110)
+
+verifyRemoveProductFromCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.111 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyRemoveProductFromCart(AddToCartTestCases.java:119)
+
+verifyCartEmptymessage(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 6.252 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartEmptymessage(AddToCartTestCases.java:127)
+
+verifyCartClose(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.117 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartClose(AddToCartTestCases.java:135)
+
+addProductToCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 4.362 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.addProductToCart(AddToCartTestCases.java:34)
+
+verifyButtonText(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 2.203 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyButtonText(AddToCartTestCases.java:43)
+
+verifyPrice(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 2.157 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyPrice(AddToCartTestCases.java:51)
+
+verifyCartOverLayPopup(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 2.046 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartOverLayPopup(AddToCartTestCases.java:61)
+
+verifyProductAddedToCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyProductAddedToCart(AddToCartTestCases.java:70)
+
+verifyCartTotalAmout(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 2.145 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartTotalAmout(AddToCartTestCases.java:78)
+
+verifyCartSubTotal(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 2.099 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartSubTotal(AddToCartTestCases.java:87)
+
+verifyCartCounterUpdate(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.013 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartCounterUpdate(AddToCartTestCases.java:94)
+
+verifyCartProductCountIncrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 7.271 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountIncrease(AddToCartTestCases.java:102)
+
+verifyCartProductCountDeCrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 7.264 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountDeCrease(AddToCartTestCases.java:110)
+
+verifyRemoveProductFromCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 2.056 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyRemoveProductFromCart(AddToCartTestCases.java:119)
+
+verifyCartEmptymessage(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 7.198 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartEmptymessage(AddToCartTestCases.java:127)
+
+verifyCartClose(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 2.185 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartClose(AddToCartTestCases.java:135)
+
+addProductToCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 2.348 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.addProductToCart(AddToCartTestCases.java:34)
+
+verifyButtonText(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 2.106 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyButtonText(AddToCartTestCases.java:43)
+
+verifyPrice(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 2.183 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyPrice(AddToCartTestCases.java:51)
+
+verifyCartOverLayPopup(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 2.079 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartOverLayPopup(AddToCartTestCases.java:61)
+
+verifyProductAddedToCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyProductAddedToCart(AddToCartTestCases.java:70)
+
+verifyCartTotalAmout(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 2.217 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartTotalAmout(AddToCartTestCases.java:78)
+
+verifyCartSubTotal(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 2.174 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartSubTotal(AddToCartTestCases.java:87)
+
+verifyCartCounterUpdate(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.012 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartCounterUpdate(AddToCartTestCases.java:94)
+
+verifyCartProductCountIncrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 7.159 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountIncrease(AddToCartTestCases.java:102)
+
+verifyCartProductCountDeCrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 7.06 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountDeCrease(AddToCartTestCases.java:110)
+
+verifyRemoveProductFromCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 2.09 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyRemoveProductFromCart(AddToCartTestCases.java:119)
+
+verifyCartEmptymessage(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 7.139 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartEmptymessage(AddToCartTestCases.java:127)
+
+verifyCartClose(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 2.26 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartClose(AddToCartTestCases.java:135)
+
+addProductToCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 4.561 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.addProductToCart(AddToCartTestCases.java:34)
+
+verifyButtonText(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 2.374 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyButtonText(AddToCartTestCases.java:43)
+
+verifyPrice(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 2.44 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyPrice(AddToCartTestCases.java:51)
+
+verifyCartOverLayPopup(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 2.373 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartOverLayPopup(AddToCartTestCases.java:61)
+
+verifyProductAddedToCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyProductAddedToCart(AddToCartTestCases.java:70)
+
+verifyCartTotalAmout(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 2.361 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartTotalAmout(AddToCartTestCases.java:78)
+
+verifyCartSubTotal(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 2.332 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartSubTotal(AddToCartTestCases.java:87)
+
+verifyCartCounterUpdate(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.011 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartCounterUpdate(AddToCartTestCases.java:94)
+
+verifyCartProductCountIncrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 7.515 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountIncrease(AddToCartTestCases.java:102)
+
+verifyCartProductCountDeCrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 7.467 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountDeCrease(AddToCartTestCases.java:110)
+
+verifyRemoveProductFromCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 2.415 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyRemoveProductFromCart(AddToCartTestCases.java:119)
+
+verifyCartEmptymessage(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 7.456 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartEmptymessage(AddToCartTestCases.java:127)
+
+verifyCartClose(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 2.247 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartClose(AddToCartTestCases.java:135)
+
+verifyButtonText(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.024 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyButtonText(AddToCartTestCases.java:43)
+
+addProductToCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.367 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.addProductToCart(AddToCartTestCases.java:34)
+
+verifyButtonText(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.221 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyButtonText(AddToCartTestCases.java:43)
+
+verifyPrice(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.201 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyPrice(AddToCartTestCases.java:51)
+
+verifyCartOverLayPopup(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.215 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartOverLayPopup(AddToCartTestCases.java:61)
+
+verifyProductAddedToCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyProductAddedToCart(AddToCartTestCases.java:70)
+
+verifyCartTotalAmout(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.217 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartTotalAmout(AddToCartTestCases.java:78)
+
+verifyCartSubTotal(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.204 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartSubTotal(AddToCartTestCases.java:87)
+
+verifyCartCounterUpdate(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.214 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartCounterUpdate(AddToCartTestCases.java:94)
+
+verifyCartProductCountIncrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.212 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountIncrease(AddToCartTestCases.java:102)
+
+verifyCartProductCountDeCrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.204 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountDeCrease(AddToCartTestCases.java:110)
+
+verifyRemoveProductFromCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.235 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyRemoveProductFromCart(AddToCartTestCases.java:119)
+
+verifyCartEmptymessage(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 5.278 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartEmptymessage(AddToCartTestCases.java:127)
+
+verifyCartClose(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.213 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartClose(AddToCartTestCases.java:135)
+
+closeBrowser(shield.enus.com.nvidia.www.javatests.CloseBrowser)  Time elapsed: 0.214 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver
+	at shield.enus.com.nvidia.www.javatests.CloseBrowser.closeBrowser(CloseBrowser.java:14)
+
+verifyButtonText(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.017 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyButtonText(AddToCartTestCases.java:43)
+
+verifyCartOverLayPopup(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.013 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartOverLayPopup(AddToCartTestCases.java:61)
+
+verifyProductAddedToCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyProductAddedToCart(AddToCartTestCases.java:70)
+
+verifyCartTotalAmout(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.01 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartTotalAmout(AddToCartTestCases.java:78)
+
+verifyCartSubTotal(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.107 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartSubTotal(AddToCartTestCases.java:87)
+
+verifyCartCounterUpdate(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.011 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartCounterUpdate(AddToCartTestCases.java:94)
+
+verifyCartProductCountIncrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 6.114 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountIncrease(AddToCartTestCases.java:102)
+
+verifyCartProductCountDeCrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 6.191 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountDeCrease(AddToCartTestCases.java:110)
+
+verifyRemoveProductFromCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.107 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyRemoveProductFromCart(AddToCartTestCases.java:119)
+
+verifyCartEmptymessage(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 6.038 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartEmptymessage(AddToCartTestCases.java:127)
+
+verifyCartClose(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.037 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartClose(AddToCartTestCases.java:135)
+
+verifyButtonText(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.022 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyButtonText(AddToCartTestCases.java:43)
+
+addProductToCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.504 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.addProductToCart(AddToCartTestCases.java:34)
+
+verifyButtonText(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.242 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyButtonText(AddToCartTestCases.java:43)
+
+verifyPrice(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.199 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyPrice(AddToCartTestCases.java:51)
+
+verifyCartOverLayPopup(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.213 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartOverLayPopup(AddToCartTestCases.java:61)
+
+verifyProductAddedToCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyProductAddedToCart(AddToCartTestCases.java:70)
+
+verifyCartTotalAmout(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.216 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartTotalAmout(AddToCartTestCases.java:78)
+
+verifyCartSubTotal(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.229 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartSubTotal(AddToCartTestCases.java:87)
+
+verifyCartCounterUpdate(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.219 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartCounterUpdate(AddToCartTestCases.java:94)
+
+verifyCartProductCountIncrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.221 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountIncrease(AddToCartTestCases.java:102)
+
+verifyCartProductCountDeCrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.264 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountDeCrease(AddToCartTestCases.java:110)
+
+verifyRemoveProductFromCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.196 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyRemoveProductFromCart(AddToCartTestCases.java:119)
+
+verifyCartEmptymessage(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 5.293 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartEmptymessage(AddToCartTestCases.java:127)
+
+verifyCartClose(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.202 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartClose(AddToCartTestCases.java:135)
+
+closeBrowser(shield.enus.com.nvidia.www.javatests.CloseBrowser)  Time elapsed: 0.203 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver
+	at shield.enus.com.nvidia.www.javatests.CloseBrowser.closeBrowser(CloseBrowser.java:14)
+
+verifyButtonText(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.012 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyButtonText(AddToCartTestCases.java:43)
+
+verifyCartOverLayPopup(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.083 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartOverLayPopup(AddToCartTestCases.java:61)
+
+verifyProductAddedToCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyProductAddedToCart(AddToCartTestCases.java:70)
+
+verifyCartTotalAmout(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.05 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartTotalAmout(AddToCartTestCases.java:78)
+
+verifyCartSubTotal(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.056 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartSubTotal(AddToCartTestCases.java:87)
+
+verifyCartCounterUpdate(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.014 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartCounterUpdate(AddToCartTestCases.java:94)
+
+verifyCartProductCountIncrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 6.086 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountIncrease(AddToCartTestCases.java:102)
+
+verifyCartProductCountDeCrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 6.154 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountDeCrease(AddToCartTestCases.java:110)
+
+verifyRemoveProductFromCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.085 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyRemoveProductFromCart(AddToCartTestCases.java:119)
+
+verifyCartEmptymessage(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 6.07 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartEmptymessage(AddToCartTestCases.java:127)
+
+verifyCartClose(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.001 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartClose(AddToCartTestCases.java:135)
+
+verifyButtonText(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.018 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyButtonText(AddToCartTestCases.java:43)
+
+addProductToCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.238 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.addProductToCart(AddToCartTestCases.java:34)
+
+verifyButtonText(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.233 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyButtonText(AddToCartTestCases.java:43)
+
+verifyPrice(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.221 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyPrice(AddToCartTestCases.java:51)
+
+verifyCartOverLayPopup(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.207 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartOverLayPopup(AddToCartTestCases.java:61)
+
+verifyProductAddedToCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyProductAddedToCart(AddToCartTestCases.java:70)
+
+verifyCartTotalAmout(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.244 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartTotalAmout(AddToCartTestCases.java:78)
+
+verifyCartSubTotal(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.214 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartSubTotal(AddToCartTestCases.java:87)
+
+verifyCartCounterUpdate(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.239 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartCounterUpdate(AddToCartTestCases.java:94)
+
+verifyCartProductCountIncrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.206 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountIncrease(AddToCartTestCases.java:102)
+
+verifyCartProductCountDeCrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.228 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountDeCrease(AddToCartTestCases.java:110)
+
+verifyRemoveProductFromCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.244 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyRemoveProductFromCart(AddToCartTestCases.java:119)
+
+verifyCartEmptymessage(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 5.227 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartEmptymessage(AddToCartTestCases.java:127)
+
+verifyCartClose(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.227 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartClose(AddToCartTestCases.java:135)
+
+closeBrowser(shield.enus.com.nvidia.www.javatests.CloseBrowser)  Time elapsed: 0.228 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver
+	at shield.enus.com.nvidia.www.javatests.CloseBrowser.closeBrowser(CloseBrowser.java:14)
+
+verifyButtonText(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.016 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyButtonText(AddToCartTestCases.java:43)
+
+verifyCartOverLayPopup(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.024 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartOverLayPopup(AddToCartTestCases.java:61)
+
+verifyProductAddedToCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyProductAddedToCart(AddToCartTestCases.java:70)
+
+verifyCartTotalAmout(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.03 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartTotalAmout(AddToCartTestCases.java:78)
+
+verifyCartSubTotal(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.027 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartSubTotal(AddToCartTestCases.java:87)
+
+verifyCartCounterUpdate(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.015 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartCounterUpdate(AddToCartTestCases.java:94)
+
+verifyCartProductCountIncrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 6.036 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountIncrease(AddToCartTestCases.java:102)
+
+verifyCartProductCountDeCrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 6.159 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountDeCrease(AddToCartTestCases.java:110)
+
+verifyRemoveProductFromCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.109 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyRemoveProductFromCart(AddToCartTestCases.java:119)
+
+verifyCartEmptymessage(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 6.096 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartEmptymessage(AddToCartTestCases.java:127)
+
+verifyCartClose(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.995 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartClose(AddToCartTestCases.java:135)
+
+verifyButtonText(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.017 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyButtonText(AddToCartTestCases.java:43)
+
+verifyCartOverLayPopup(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.036 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartOverLayPopup(AddToCartTestCases.java:61)
+
+verifyProductAddedToCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyProductAddedToCart(AddToCartTestCases.java:70)
+
+verifyCartTotalAmout(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.035 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartTotalAmout(AddToCartTestCases.java:78)
+
+verifyCartSubTotal(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.994 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartSubTotal(AddToCartTestCases.java:87)
+
+verifyCartCounterUpdate(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.039 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartCounterUpdate(AddToCartTestCases.java:94)
+
+verifyCartProductCountIncrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 6.024 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountIncrease(AddToCartTestCases.java:102)
+
+verifyCartProductCountDeCrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 6.189 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountDeCrease(AddToCartTestCases.java:110)
+
+verifyRemoveProductFromCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.107 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyRemoveProductFromCart(AddToCartTestCases.java:119)
+
+verifyCartEmptymessage(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 6.013 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartEmptymessage(AddToCartTestCases.java:127)
+
+verifyCartClose(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.002 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartClose(AddToCartTestCases.java:135)
+
+addProductToCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 4.538 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.addProductToCart(AddToCartTestCases.java:34)
+
+verifyButtonText(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.015 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyButtonText(AddToCartTestCases.java:43)
+
+verifyPrice(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.01 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyPrice(AddToCartTestCases.java:51)
+
+verifyCartOverLayPopup(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 2.397 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartOverLayPopup(AddToCartTestCases.java:61)
+
+verifyProductAddedToCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyProductAddedToCart(AddToCartTestCases.java:70)
+
+verifyCartTotalAmout(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 2.407 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartTotalAmout(AddToCartTestCases.java:78)
+
+verifyCartSubTotal(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 2.364 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartSubTotal(AddToCartTestCases.java:87)
+
+verifyCartCounterUpdate(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartCounterUpdate(AddToCartTestCases.java:94)
+
+verifyCartProductCountIncrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 7.421 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountIncrease(AddToCartTestCases.java:102)
+
+verifyCartProductCountDeCrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 7.397 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountDeCrease(AddToCartTestCases.java:110)
+
+verifyRemoveProductFromCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 2.452 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyRemoveProductFromCart(AddToCartTestCases.java:119)
+
+verifyCartEmptymessage(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 7.591 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartEmptymessage(AddToCartTestCases.java:127)
+
+verifyCartClose(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 2.354 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartClose(AddToCartTestCases.java:135)
+
+addProductToCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 3.529 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.addProductToCart(AddToCartTestCases.java:34)
+
+verifyButtonText(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.012 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyButtonText(AddToCartTestCases.java:43)
+
+verifyPrice(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyPrice(AddToCartTestCases.java:51)
+
+verifyCartOverLayPopup(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.279 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartOverLayPopup(AddToCartTestCases.java:61)
+
+verifyProductAddedToCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyProductAddedToCart(AddToCartTestCases.java:70)
+
+verifyCartTotalAmout(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.265 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartTotalAmout(AddToCartTestCases.java:78)
+
+verifyCartSubTotal(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.309 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartSubTotal(AddToCartTestCases.java:87)
+
+verifyCartCounterUpdate(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartCounterUpdate(AddToCartTestCases.java:94)
+
+verifyCartProductCountIncrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 6.345 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountIncrease(AddToCartTestCases.java:102)
+
+verifyCartProductCountDeCrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 6.395 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountDeCrease(AddToCartTestCases.java:110)
+
+verifyRemoveProductFromCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.281 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyRemoveProductFromCart(AddToCartTestCases.java:119)
+
+verifyCartEmptymessage(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 6.343 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartEmptymessage(AddToCartTestCases.java:127)
+
+verifyCartClose(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.286 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartClose(AddToCartTestCases.java:135)
+
+addProductToCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.084 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.addProductToCart(AddToCartTestCases.java:34)
+
+verifyButtonText(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.026 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyButtonText(AddToCartTestCases.java:43)
+
+verifyPrice(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyPrice(AddToCartTestCases.java:51)
+
+verifyCartOverLayPopup(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.053 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartOverLayPopup(AddToCartTestCases.java:61)
+
+verifyProductAddedToCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.008 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyProductAddedToCart(AddToCartTestCases.java:70)
+
+verifyCartTotalAmout(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.985 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartTotalAmout(AddToCartTestCases.java:78)
+
+verifyCartSubTotal(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.263 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartSubTotal(AddToCartTestCases.java:87)
+
+verifyCartCounterUpdate(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.013 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartCounterUpdate(AddToCartTestCases.java:94)
+
+verifyCartProductCountIncrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 6.201 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountIncrease(AddToCartTestCases.java:102)
+
+verifyCartProductCountDeCrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 5.977 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountDeCrease(AddToCartTestCases.java:110)
+
+verifyRemoveProductFromCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.021 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyRemoveProductFromCart(AddToCartTestCases.java:119)
+
+verifyCartEmptymessage(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 5.95 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartEmptymessage(AddToCartTestCases.java:127)
+
+verifyCartClose(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.962 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartClose(AddToCartTestCases.java:135)
+
+addProductToCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 3.474 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.addProductToCart(AddToCartTestCases.java:34)
+
+verifyButtonText(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.29 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyButtonText(AddToCartTestCases.java:43)
+
+verifyPrice(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.282 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyPrice(AddToCartTestCases.java:51)
+
+verifyCartOverLayPopup(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.285 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartOverLayPopup(AddToCartTestCases.java:61)
+
+verifyProductAddedToCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyProductAddedToCart(AddToCartTestCases.java:70)
+
+verifyCartTotalAmout(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.28 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartTotalAmout(AddToCartTestCases.java:78)
+
+verifyCartSubTotal(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.293 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartSubTotal(AddToCartTestCases.java:87)
+
+verifyCartCounterUpdate(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 0.011 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartCounterUpdate(AddToCartTestCases.java:94)
+
+verifyCartProductCountIncrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 6.379 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountIncrease(AddToCartTestCases.java:102)
+
+verifyCartProductCountDeCrease(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 6.345 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountDeCrease(AddToCartTestCases.java:110)
+
+verifyRemoveProductFromCart(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.273 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyRemoveProductFromCart(AddToCartTestCases.java:119)
+
+verifyCartEmptymessage(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 6.318 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartEmptymessage(AddToCartTestCases.java:127)
+
+verifyCartClose(shield.enus.com.nvidia.www.javatests.AddToCartTestCases)  Time elapsed: 1.254 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartClose(AddToCartTestCases.java:135)
+

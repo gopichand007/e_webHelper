@@ -1,0 +1,1812 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Shield Home Page, SHIELD product</td><td class="numi">14</td><td class="numi">14</td><td class="numi">0</td><td class="numi">0</td><td class="numi">82.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Shield Home Page, SHIELD  pro product</td><td class="numi">13</td><td class="numi">13</td><td class="numi">0</td><td class="numi">0</td><td class="numi">30.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Shield Home Page, SHIELD  Tablet K1</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi_attn">11</td><td class="numi">34.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Shield TV  Page, SHIELD product</td><td class="numi">14</td><td class="numi">14</td><td class="numi">0</td><td class="numi">0</td><td class="numi">99.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Shield TV  Page, SHIELD  pro product</td><td class="numi">13</td><td class="numi">13</td><td class="numi">0</td><td class="numi">0</td><td class="numi">33.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Shield TV  Page, SHIELD CONTROLLER  product</td><td class="numi">13</td><td class="numi">13</td><td class="numi">0</td><td class="numi">0</td><td class="numi">31.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Shield TV  Page, SHIELD STAND  product</td><td class="numi">13</td><td class="numi">13</td><td class="numi">0</td><td class="numi">0</td><td class="numi">31.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Shield TV  Page, SHIELD remote  product</td><td class="numi">13</td><td class="numi">13</td><td class="numi">0</td><td class="numi">0</td><td class="numi">31.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Shield TV  Page, SHIELD Pro stand  product</td><td class="numi">12</td><td class="numi">12</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">34.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">AI HOME Page, SHIELD product</td><td class="numi">14</td><td class="numi">14</td><td class="numi">0</td><td class="numi">0</td><td class="numi">81.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">AI HOME Page, SHIELD  pro product</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">13</td><td class="numi">11.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">121</td><td class="numi">121</td><td class="numi">0</td><td class="numi_attn">25</td><td class="numi">500.6 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Shield Home Page, SHIELD product &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="14">shield.enus.com.nvidia.www.javatests.AddToCartTestCases</td><td><a href="#m1"><b>addProductToCart</b>  </a></td><td class="numi">1</td><td>1491563984414</td><td class="numi">2127</td></tr><tr class="passedodd"><td><a href="#m2"><b>verifyButtonText</b>  </a></td><td class="numi">1</td><td>1491563986541</td><td class="numi">19</td></tr><tr class="passedodd"><td><a href="#m3"><b>verifyPrice</b>  </a></td><td class="numi">1</td><td>1491563986562</td><td class="numi">17</td></tr><tr class="passedodd"><td><a href="#m4"><b>verifyCartOverLayPopup</b>  </a></td><td class="numi">1</td><td>1491563986579</td><td class="numi">46</td></tr><tr class="passedodd"><td><a href="#m5"><b>verifyProductAddedToCart</b>  </a></td><td class="numi">1</td><td>1491563986625</td><td class="numi">30</td></tr><tr class="passedodd"><td><a href="#m6"><b>verifyCartTotalAmout</b>  </a></td><td class="numi">1</td><td>1491563986656</td><td class="numi">39</td></tr><tr class="passedodd"><td><a href="#m7"><b>verifyCartSubTotal</b>  </a></td><td class="numi">1</td><td>1491563986695</td><td class="numi">72</td></tr><tr class="passedodd"><td><a href="#m8"><b>verifyCartCounterUpdate</b>  </a></td><td class="numi">1</td><td>1491563986768</td><td class="numi">28</td></tr><tr class="passedodd"><td><a href="#m9"><b>verifyCartProductCountIncrease</b>  </a></td><td class="numi">1</td><td>1491563986796</td><td class="numi">5124</td></tr><tr class="passedodd"><td><a href="#m10"><b>verifyCartProductCountDeCrease</b>  </a></td><td class="numi">1</td><td>1491563991920</td><td class="numi">5047</td></tr><tr class="passedodd"><td><a href="#m11"><b>verifyRemoveProductFromCart</b>  </a></td><td class="numi">1</td><td>1491563996967</td><td class="numi">5090</td></tr><tr class="passedodd"><td><a href="#m12"><b>verifyCartEmptymessage</b>  </a></td><td class="numi">1</td><td>1491564002058</td><td class="numi">5058</td></tr><tr class="passedodd"><td><a href="#m13"><b>verifyCartClose</b>  </a></td><td class="numi">1</td><td>1491564007117</td><td class="numi">43</td></tr><tr class="passedodd"><td><a href="#m14"><b>verifyCheckout</b>  </a></td><td class="numi">1</td><td>1491564007161</td><td class="numi">50515</td></tr>
+<tr><th colspan="4">Shield Home Page, SHIELD  pro product &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="13">shield.enus.com.nvidia.www.javatests.AddToCartTestCases</td><td><a href="#m15"><b>addProductToCart</b>  </a></td><td class="numi">1</td><td>1491564065840</td><td class="numi">2174</td></tr><tr class="passedodd"><td><a href="#m16"><b>verifyButtonText</b>  </a></td><td class="numi">1</td><td>1491564068014</td><td class="numi">22</td></tr><tr class="passedodd"><td><a href="#m17"><b>verifyPrice</b>  </a></td><td class="numi">1</td><td>1491564068037</td><td class="numi">15</td></tr><tr class="passedodd"><td><a href="#m18"><b>verifyCartOverLayPopup</b>  </a></td><td class="numi">1</td><td>1491564068052</td><td class="numi">25</td></tr><tr class="passedodd"><td><a href="#m19"><b>verifyProductAddedToCart</b>  </a></td><td class="numi">1</td><td>1491564068077</td><td class="numi">33</td></tr><tr class="passedodd"><td><a href="#m20"><b>verifyCartTotalAmout</b>  </a></td><td class="numi">1</td><td>1491564068110</td><td class="numi">21</td></tr><tr class="passedodd"><td><a href="#m21"><b>verifyCartSubTotal</b>  </a></td><td class="numi">1</td><td>1491564068132</td><td class="numi">38</td></tr><tr class="passedodd"><td><a href="#m22"><b>verifyCartCounterUpdate</b>  </a></td><td class="numi">1</td><td>1491564068171</td><td class="numi">26</td></tr><tr class="passedodd"><td><a href="#m23"><b>verifyCartProductCountIncrease</b>  </a></td><td class="numi">1</td><td>1491564068197</td><td class="numi">5114</td></tr><tr class="passedodd"><td><a href="#m24"><b>verifyCartProductCountDeCrease</b>  </a></td><td class="numi">1</td><td>1491564073311</td><td class="numi">5060</td></tr><tr class="passedodd"><td><a href="#m25"><b>verifyRemoveProductFromCart</b>  </a></td><td class="numi">1</td><td>1491564078372</td><td class="numi">5062</td></tr><tr class="passedodd"><td><a href="#m26"><b>verifyCartEmptymessage</b>  </a></td><td class="numi">1</td><td>1491564083435</td><td class="numi">5027</td></tr><tr class="passedodd"><td><a href="#m27"><b>verifyCartClose</b>  </a></td><td class="numi">1</td><td>1491564088462</td><td class="numi">33</td></tr>
+<tr><th colspan="4">Shield Home Page, SHIELD  Tablet K1 &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="11">shield.enus.com.nvidia.www.javatests.AddToCartTestCases</td><td><a href="#m28"><b>verifyButtonText</b>  </a></td><td class="numi">1</td><td>1491564098695</td><td class="numi">21</td></tr><tr class="failedodd"><td><a href="#m29"><b>verifyCartOverLayPopup</b>  </a></td><td class="numi">1</td><td>1491564098737</td><td class="numi">1140</td></tr><tr class="failedodd"><td><a href="#m30"><b>verifyProductAddedToCart</b>  </a></td><td class="numi">1</td><td>1491564099877</td><td class="numi">5</td></tr><tr class="failedodd"><td><a href="#m31"><b>verifyCartTotalAmout</b>  </a></td><td class="numi">1</td><td>1491564099883</td><td class="numi">1050</td></tr><tr class="failedodd"><td><a href="#m32"><b>verifyCartSubTotal</b>  </a></td><td class="numi">1</td><td>1491564100934</td><td class="numi">1271</td></tr><tr class="failedodd"><td><a href="#m33"><b>verifyCartCounterUpdate</b>  </a></td><td class="numi">1</td><td>1491564102205</td><td class="numi">15</td></tr><tr class="failedodd"><td><a href="#m34"><b>verifyCartProductCountIncrease</b>  </a></td><td class="numi">1</td><td>1491564102221</td><td class="numi">5981</td></tr><tr class="failedodd"><td><a href="#m35"><b>verifyCartProductCountDeCrease</b>  </a></td><td class="numi">1</td><td>1491564108203</td><td class="numi">6164</td></tr><tr class="failedodd"><td><a href="#m36"><b>verifyRemoveProductFromCart</b>  </a></td><td class="numi">1</td><td>1491564114368</td><td class="numi">1110</td></tr><tr class="failedodd"><td><a href="#m37"><b>verifyCartEmptymessage</b>  </a></td><td class="numi">1</td><td>1491564115479</td><td class="numi">6077</td></tr><tr class="failedodd"><td><a href="#m38"><b>verifyCartClose</b>  </a></td><td class="numi">1</td><td>1491564121556</td><td class="numi">1036</td></tr>
+<tr><th colspan="4">Shield Home Page, SHIELD  Tablet K1 &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">shield.enus.com.nvidia.www.javatests.AddToCartTestCases</td><td><a href="#m39"><b>addProductToCart</b>  </a></td><td class="numi">1</td><td>1491564096573</td><td class="numi">2121</td></tr><tr class="passedodd"><td><a href="#m40"><b>verifyPrice</b>  </a></td><td class="numi">1</td><td>1491564098717</td><td class="numi">19</td></tr>
+<tr><th colspan="4">Shield TV  Page, SHIELD product &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="14">shield.enus.com.nvidia.www.javatests.AddToCartTestCases</td><td><a href="#m41"><b>addProductToCart</b>  </a></td><td class="numi">1</td><td>1491564132156</td><td class="numi">2224</td></tr><tr class="passedodd"><td><a href="#m42"><b>verifyButtonText</b>  </a></td><td class="numi">1</td><td>1491564134380</td><td class="numi">24</td></tr><tr class="passedodd"><td><a href="#m43"><b>verifyPrice</b>  </a></td><td class="numi">1</td><td>1491564134404</td><td class="numi">18</td></tr><tr class="passedodd"><td><a href="#m44"><b>verifyCartOverLayPopup</b>  </a></td><td class="numi">1</td><td>1491564134422</td><td class="numi">23</td></tr><tr class="passedodd"><td><a href="#m45"><b>verifyProductAddedToCart</b>  </a></td><td class="numi">1</td><td>1491564134446</td><td class="numi">22</td></tr><tr class="passedodd"><td><a href="#m46"><b>verifyCartTotalAmout</b>  </a></td><td class="numi">1</td><td>1491564134468</td><td class="numi">29</td></tr><tr class="passedodd"><td><a href="#m47"><b>verifyCartSubTotal</b>  </a></td><td class="numi">1</td><td>1491564134498</td><td class="numi">36</td></tr><tr class="passedodd"><td><a href="#m48"><b>verifyCartCounterUpdate</b>  </a></td><td class="numi">1</td><td>1491564134534</td><td class="numi">18</td></tr><tr class="passedodd"><td><a href="#m49"><b>verifyCartProductCountIncrease</b>  </a></td><td class="numi">1</td><td>1491564134552</td><td class="numi">5133</td></tr><tr class="passedodd"><td><a href="#m50"><b>verifyCartProductCountDeCrease</b>  </a></td><td class="numi">1</td><td>1491564139685</td><td class="numi">5043</td></tr><tr class="passedodd"><td><a href="#m51"><b>verifyRemoveProductFromCart</b>  </a></td><td class="numi">1</td><td>1491564144728</td><td class="numi">5056</td></tr><tr class="passedodd"><td><a href="#m52"><b>verifyCartEmptymessage</b>  </a></td><td class="numi">1</td><td>1491564149784</td><td class="numi">5029</td></tr><tr class="passedodd"><td><a href="#m53"><b>verifyCartClose</b>  </a></td><td class="numi">1</td><td>1491564154813</td><td class="numi">47</td></tr><tr class="passedodd"><td><a href="#m54"><b>verifyCheckout</b>  </a></td><td class="numi">1</td><td>1491564154861</td><td class="numi">66888</td></tr>
+<tr><th colspan="4">Shield TV  Page, SHIELD  pro product &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="13">shield.enus.com.nvidia.www.javatests.AddToCartTestCases</td><td><a href="#m55"><b>addProductToCart</b>  </a></td><td class="numi">1</td><td>1491564230520</td><td class="numi">4271</td></tr><tr class="passedodd"><td><a href="#m56"><b>verifyButtonText</b>  </a></td><td class="numi">1</td><td>1491564234791</td><td class="numi">24</td></tr><tr class="passedodd"><td><a href="#m57"><b>verifyPrice</b>  </a></td><td class="numi">1</td><td>1491564234815</td><td class="numi">39</td></tr><tr class="passedodd"><td><a href="#m58"><b>verifyCartOverLayPopup</b>  </a></td><td class="numi">1</td><td>1491564234855</td><td class="numi">24</td></tr><tr class="passedodd"><td><a href="#m59"><b>verifyProductAddedToCart</b>  </a></td><td class="numi">1</td><td>1491564234879</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m60"><b>verifyCartTotalAmout</b>  </a></td><td class="numi">1</td><td>1491564234906</td><td class="numi">23</td></tr><tr class="passedodd"><td><a href="#m61"><b>verifyCartSubTotal</b>  </a></td><td class="numi">1</td><td>1491564234930</td><td class="numi">72</td></tr><tr class="passedodd"><td><a href="#m62"><b>verifyCartCounterUpdate</b>  </a></td><td class="numi">1</td><td>1491564235002</td><td class="numi">9</td></tr><tr class="passedodd"><td><a href="#m63"><b>verifyCartProductCountIncrease</b>  </a></td><td class="numi">1</td><td>1491564235011</td><td class="numi">5104</td></tr><tr class="passedodd"><td><a href="#m64"><b>verifyCartProductCountDeCrease</b>  </a></td><td class="numi">1</td><td>1491564240115</td><td class="numi">5056</td></tr><tr class="passedodd"><td><a href="#m65"><b>verifyRemoveProductFromCart</b>  </a></td><td class="numi">1</td><td>1491564245171</td><td class="numi">5095</td></tr><tr class="passedodd"><td><a href="#m66"><b>verifyCartEmptymessage</b>  </a></td><td class="numi">1</td><td>1491564250267</td><td class="numi">5066</td></tr><tr class="passedodd"><td><a href="#m67"><b>verifyCartClose</b>  </a></td><td class="numi">1</td><td>1491564255334</td><td class="numi">83</td></tr>
+<tr><th colspan="4">Shield TV  Page, SHIELD CONTROLLER  product &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="13">shield.enus.com.nvidia.www.javatests.AddToCartTestCases</td><td><a href="#m68"><b>addProductToCart</b>  </a></td><td class="numi">1</td><td>1491564263767</td><td class="numi">2150</td></tr><tr class="passedodd"><td><a href="#m69"><b>verifyButtonText</b>  </a></td><td class="numi">1</td><td>1491564265917</td><td class="numi">84</td></tr><tr class="passedodd"><td><a href="#m70"><b>verifyPrice</b>  </a></td><td class="numi">1</td><td>1491564266002</td><td class="numi">17</td></tr><tr class="passedodd"><td><a href="#m71"><b>verifyCartOverLayPopup</b>  </a></td><td class="numi">1</td><td>1491564266019</td><td class="numi">25</td></tr><tr class="passedodd"><td><a href="#m72"><b>verifyProductAddedToCart</b>  </a></td><td class="numi">1</td><td>1491564266044</td><td class="numi">21</td></tr><tr class="passedodd"><td><a href="#m73"><b>verifyCartTotalAmout</b>  </a></td><td class="numi">1</td><td>1491564266065</td><td class="numi">45</td></tr><tr class="passedodd"><td><a href="#m74"><b>verifyCartSubTotal</b>  </a></td><td class="numi">1</td><td>1491564266110</td><td class="numi">51</td></tr><tr class="passedodd"><td><a href="#m75"><b>verifyCartCounterUpdate</b>  </a></td><td class="numi">1</td><td>1491564266162</td><td class="numi">12</td></tr><tr class="passedodd"><td><a href="#m76"><b>verifyCartProductCountIncrease</b>  </a></td><td class="numi">1</td><td>1491564266174</td><td class="numi">5058</td></tr><tr class="passedodd"><td><a href="#m77"><b>verifyCartProductCountDeCrease</b>  </a></td><td class="numi">1</td><td>1491564271233</td><td class="numi">5116</td></tr><tr class="passedodd"><td><a href="#m78"><b>verifyRemoveProductFromCart</b>  </a></td><td class="numi">1</td><td>1491564276349</td><td class="numi">5102</td></tr><tr class="passedodd"><td><a href="#m79"><b>verifyCartEmptymessage</b>  </a></td><td class="numi">1</td><td>1491564281452</td><td class="numi">5023</td></tr><tr class="passedodd"><td><a href="#m80"><b>verifyCartClose</b>  </a></td><td class="numi">1</td><td>1491564286475</td><td class="numi">39</td></tr>
+<tr><th colspan="4">Shield TV  Page, SHIELD STAND  product &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="13">shield.enus.com.nvidia.www.javatests.AddToCartTestCases</td><td><a href="#m81"><b>addProductToCart</b>  </a></td><td class="numi">1</td><td>1491564294923</td><td class="numi">2181</td></tr><tr class="passedodd"><td><a href="#m82"><b>verifyButtonText</b>  </a></td><td class="numi">1</td><td>1491564297105</td><td class="numi">22</td></tr><tr class="passedodd"><td><a href="#m83"><b>verifyPrice</b>  </a></td><td class="numi">1</td><td>1491564297127</td><td class="numi">16</td></tr><tr class="passedodd"><td><a href="#m84"><b>verifyCartOverLayPopup</b>  </a></td><td class="numi">1</td><td>1491564297144</td><td class="numi">21</td></tr><tr class="passedodd"><td><a href="#m85"><b>verifyProductAddedToCart</b>  </a></td><td class="numi">1</td><td>1491564297166</td><td class="numi">23</td></tr><tr class="passedodd"><td><a href="#m86"><b>verifyCartTotalAmout</b>  </a></td><td class="numi">1</td><td>1491564297189</td><td class="numi">24</td></tr><tr class="passedodd"><td><a href="#m87"><b>verifyCartSubTotal</b>  </a></td><td class="numi">1</td><td>1491564297213</td><td class="numi">36</td></tr><tr class="passedodd"><td><a href="#m88"><b>verifyCartCounterUpdate</b>  </a></td><td class="numi">1</td><td>1491564297249</td><td class="numi">12</td></tr><tr class="passedodd"><td><a href="#m89"><b>verifyCartProductCountIncrease</b>  </a></td><td class="numi">1</td><td>1491564297261</td><td class="numi">5139</td></tr><tr class="passedodd"><td><a href="#m90"><b>verifyCartProductCountDeCrease</b>  </a></td><td class="numi">1</td><td>1491564302400</td><td class="numi">5091</td></tr><tr class="passedodd"><td><a href="#m91"><b>verifyRemoveProductFromCart</b>  </a></td><td class="numi">1</td><td>1491564307491</td><td class="numi">5114</td></tr><tr class="passedodd"><td><a href="#m92"><b>verifyCartEmptymessage</b>  </a></td><td class="numi">1</td><td>1491564312606</td><td class="numi">5093</td></tr><tr class="passedodd"><td><a href="#m93"><b>verifyCartClose</b>  </a></td><td class="numi">1</td><td>1491564317700</td><td class="numi">65</td></tr>
+<tr><th colspan="4">Shield TV  Page, SHIELD remote  product &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="13">shield.enus.com.nvidia.www.javatests.AddToCartTestCases</td><td><a href="#m94"><b>addProductToCart</b>  </a></td><td class="numi">1</td><td>1491564326895</td><td class="numi">2184</td></tr><tr class="passedodd"><td><a href="#m95"><b>verifyButtonText</b>  </a></td><td class="numi">1</td><td>1491564329079</td><td class="numi">23</td></tr><tr class="passedodd"><td><a href="#m96"><b>verifyPrice</b>  </a></td><td class="numi">1</td><td>1491564329102</td><td class="numi">18</td></tr><tr class="passedodd"><td><a href="#m97"><b>verifyCartOverLayPopup</b>  </a></td><td class="numi">1</td><td>1491564329120</td><td class="numi">23</td></tr><tr class="passedodd"><td><a href="#m98"><b>verifyProductAddedToCart</b>  </a></td><td class="numi">1</td><td>1491564329144</td><td class="numi">28</td></tr><tr class="passedodd"><td><a href="#m99"><b>verifyCartTotalAmout</b>  </a></td><td class="numi">1</td><td>1491564329172</td><td class="numi">22</td></tr><tr class="passedodd"><td><a href="#m100"><b>verifyCartSubTotal</b>  </a></td><td class="numi">1</td><td>1491564329195</td><td class="numi">36</td></tr><tr class="passedodd"><td><a href="#m101"><b>verifyCartCounterUpdate</b>  </a></td><td class="numi">1</td><td>1491564329232</td><td class="numi">11</td></tr><tr class="passedodd"><td><a href="#m102"><b>verifyCartProductCountIncrease</b>  </a></td><td class="numi">1</td><td>1491564329243</td><td class="numi">5057</td></tr><tr class="passedodd"><td><a href="#m103"><b>verifyCartProductCountDeCrease</b>  </a></td><td class="numi">1</td><td>1491564334300</td><td class="numi">5098</td></tr><tr class="passedodd"><td><a href="#m104"><b>verifyRemoveProductFromCart</b>  </a></td><td class="numi">1</td><td>1491564339398</td><td class="numi">5069</td></tr><tr class="passedodd"><td><a href="#m105"><b>verifyCartEmptymessage</b>  </a></td><td class="numi">1</td><td>1491564344468</td><td class="numi">5075</td></tr><tr class="passedodd"><td><a href="#m106"><b>verifyCartClose</b>  </a></td><td class="numi">1</td><td>1491564349543</td><td class="numi">65</td></tr>
+<tr><th colspan="4">Shield TV  Page, SHIELD Pro stand  product &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">shield.enus.com.nvidia.www.javatests.AddToCartTestCases</td><td><a href="#m107"><b>verifyButtonText</b>  </a></td><td class="numi">1</td><td>1491564363106</td><td class="numi">24</td></tr>
+<tr><th colspan="4">Shield TV  Page, SHIELD Pro stand  product &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="12">shield.enus.com.nvidia.www.javatests.AddToCartTestCases</td><td><a href="#m108"><b>addProductToCart</b>  </a></td><td class="numi">1</td><td>1491564358848</td><td class="numi">4258</td></tr><tr class="passedodd"><td><a href="#m109"><b>verifyPrice</b>  </a></td><td class="numi">1</td><td>1491564363131</td><td class="numi">16</td></tr><tr class="passedodd"><td><a href="#m110"><b>verifyCartOverLayPopup</b>  </a></td><td class="numi">1</td><td>1491564363147</td><td class="numi">24</td></tr><tr class="passedodd"><td><a href="#m111"><b>verifyProductAddedToCart</b>  </a></td><td class="numi">1</td><td>1491564363171</td><td class="numi">20</td></tr><tr class="passedodd"><td><a href="#m112"><b>verifyCartTotalAmout</b>  </a></td><td class="numi">1</td><td>1491564363191</td><td class="numi">29</td></tr><tr class="passedodd"><td><a href="#m113"><b>verifyCartSubTotal</b>  </a></td><td class="numi">1</td><td>1491564363220</td><td class="numi">37</td></tr><tr class="passedodd"><td><a href="#m114"><b>verifyCartCounterUpdate</b>  </a></td><td class="numi">1</td><td>1491564363257</td><td class="numi">16</td></tr><tr class="passedodd"><td><a href="#m115"><b>verifyCartProductCountIncrease</b>  </a></td><td class="numi">1</td><td>1491564363273</td><td class="numi">5085</td></tr><tr class="passedodd"><td><a href="#m116"><b>verifyCartProductCountDeCrease</b>  </a></td><td class="numi">1</td><td>1491564368358</td><td class="numi">5068</td></tr><tr class="passedodd"><td><a href="#m117"><b>verifyRemoveProductFromCart</b>  </a></td><td class="numi">1</td><td>1491564373427</td><td class="numi">5091</td></tr><tr class="passedodd"><td><a href="#m118"><b>verifyCartEmptymessage</b>  </a></td><td class="numi">1</td><td>1491564378518</td><td class="numi">5068</td></tr><tr class="passedodd"><td><a href="#m119"><b>verifyCartClose</b>  </a></td><td class="numi">1</td><td>1491564383586</td><td class="numi">66</td></tr>
+<tr><th colspan="4">AI HOME Page, SHIELD product &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="14">shield.enus.com.nvidia.www.javatests.AddToCartTestCases</td><td><a href="#m120"><b>addProductToCart</b>  </a></td><td class="numi">1</td><td>1491564391667</td><td class="numi">2155</td></tr><tr class="passedodd"><td><a href="#m121"><b>verifyButtonText</b>  </a></td><td class="numi">1</td><td>1491564393823</td><td class="numi">24</td></tr><tr class="passedodd"><td><a href="#m122"><b>verifyPrice</b>  </a></td><td class="numi">1</td><td>1491564393848</td><td class="numi">15</td></tr><tr class="passedodd"><td><a href="#m123"><b>verifyCartOverLayPopup</b>  </a></td><td class="numi">1</td><td>1491564393863</td><td class="numi">24</td></tr><tr class="passedodd"><td><a href="#m124"><b>verifyProductAddedToCart</b>  </a></td><td class="numi">1</td><td>1491564393887</td><td class="numi">21</td></tr><tr class="passedodd"><td><a href="#m125"><b>verifyCartTotalAmout</b>  </a></td><td class="numi">1</td><td>1491564393908</td><td class="numi">68</td></tr><tr class="passedodd"><td><a href="#m126"><b>verifyCartSubTotal</b>  </a></td><td class="numi">1</td><td>1491564393976</td><td class="numi">58</td></tr><tr class="passedodd"><td><a href="#m127"><b>verifyCartCounterUpdate</b>  </a></td><td class="numi">1</td><td>1491564394035</td><td class="numi">9</td></tr><tr class="passedodd"><td><a href="#m128"><b>verifyCartProductCountIncrease</b>  </a></td><td class="numi">1</td><td>1491564394045</td><td class="numi">5065</td></tr><tr class="passedodd"><td><a href="#m129"><b>verifyCartProductCountDeCrease</b>  </a></td><td class="numi">1</td><td>1491564399110</td><td class="numi">5104</td></tr><tr class="passedodd"><td><a href="#m130"><b>verifyRemoveProductFromCart</b>  </a></td><td class="numi">1</td><td>1491564404214</td><td class="numi">5120</td></tr><tr class="passedodd"><td><a href="#m131"><b>verifyCartEmptymessage</b>  </a></td><td class="numi">1</td><td>1491564409335</td><td class="numi">5055</td></tr><tr class="passedodd"><td><a href="#m132"><b>verifyCartClose</b>  </a></td><td class="numi">1</td><td>1491564414390</td><td class="numi">54</td></tr><tr class="passedodd"><td><a href="#m133"><b>verifyCheckout</b>  </a></td><td class="numi">1</td><td>1491564414445</td><td class="numi">50435</td></tr>
+<tr><th colspan="4">AI HOME Page, SHIELD  pro product &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">shield.enus.com.nvidia.www.javatests.CloseBrowser</td><td><a href="#m134"><b>closeBrowser</b>  </a></td><td class="numi">1</td><td>1491564477576</td><td class="numi">0</td></tr>
+<tr><th colspan="4">AI HOME Page, SHIELD  pro product &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="13">shield.enus.com.nvidia.www.javatests.AddToCartTestCases</td><td><a href="#m135"><b>addProductToCart</b>  </a></td><td class="numi">1</td><td>1491564469922</td><td class="numi">221</td></tr><tr class="failedodd"><td><a href="#m136"><b>verifyButtonText</b>  </a></td><td class="numi">1</td><td>1491564470144</td><td class="numi">210</td></tr><tr class="failedodd"><td><a href="#m137"><b>verifyPrice</b>  </a></td><td class="numi">1</td><td>1491564470355</td><td class="numi">226</td></tr><tr class="failedodd"><td><a href="#m138"><b>verifyCartOverLayPopup</b>  </a></td><td class="numi">1</td><td>1491564470582</td><td class="numi">235</td></tr><tr class="failedodd"><td><a href="#m139"><b>verifyProductAddedToCart</b>  </a></td><td class="numi">1</td><td>1491564470818</td><td class="numi">1</td></tr><tr class="failedodd"><td><a href="#m140"><b>verifyCartTotalAmout</b>  </a></td><td class="numi">1</td><td>1491564470820</td><td class="numi">232</td></tr><tr class="failedodd"><td><a href="#m141"><b>verifyCartSubTotal</b>  </a></td><td class="numi">1</td><td>1491564471052</td><td class="numi">204</td></tr><tr class="failedodd"><td><a href="#m142"><b>verifyCartCounterUpdate</b>  </a></td><td class="numi">1</td><td>1491564471256</td><td class="numi">211</td></tr><tr class="failedodd"><td><a href="#m143"><b>verifyCartProductCountIncrease</b>  </a></td><td class="numi">1</td><td>1491564471467</td><td class="numi">223</td></tr><tr class="failedodd"><td><a href="#m144"><b>verifyCartProductCountDeCrease</b>  </a></td><td class="numi">1</td><td>1491564471690</td><td class="numi">219</td></tr><tr class="failedodd"><td><a href="#m145"><b>verifyRemoveProductFromCart</b>  </a></td><td class="numi">1</td><td>1491564471910</td><td class="numi">196</td></tr><tr class="failedodd"><td><a href="#m146"><b>verifyCartEmptymessage</b>  </a></td><td class="numi">1</td><td>1491564472106</td><td class="numi">5237</td></tr><tr class="failedodd"><td><a href="#m147"><b>verifyCartClose</b>  </a></td><td class="numi">1</td><td>1491564477344</td><td class="numi">232</td></tr>
+</table>
+<h1>Shield Home Page, SHIELD product</h1>
+<h2 id="m1">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartProductCountIncrease</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product count is  increased as expected<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyRemoveProductFromCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product has remvoed from cart<br/>
+Empty message is shows as expected <br/>
+Empty message from Cart: Your cart is empty<br/>
+Remove functionalites works as expected <br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartTotalAmout</h2>
+<div style="padding-left:3em">
+Cart totla amount shows as expected€ 229.99<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:addProductToCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+info: Web element scrolling success [[FirefoxDriver: firefox on ANY (7af2f89c-053b-4d60-a2f5-8f0ebd6447fb)] -> xpath: .//div[starts-with(@class,'product-row__item js-product-item') and @data-digital-river-id='5088793800']/div[2]/a]<br/>
+Info: Button call to action works as expected<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyPrice</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+<td>€229.99</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+productID: 5088793800 provided buttonText: €229.99 Actual Button Text: €229.99<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartEmptymessage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product has remvoed from cart<br/>
+Empty message is shows as expected <br/>
+Empty message from Cart: Your cart is empty<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartProductCountDeCrease</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product count is  decreased as expected<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartCounterUpdate</h2>
+<div style="padding-left:3em">
+Cart Counter has updated once added the product <br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartClose</h2>
+<div style="padding-left:3em">
+ Clicked the Cart pop-up <br/>
+Cart pop-up is closed<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyButtonText</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+<td>IN DEN EINKAUFSWAGEN</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+productID: 5088793800 provided buttonText: IN DEN EINKAUFSWAGEN Actual Button Text: IN DEN EINKAUFSWAGEN<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCheckout</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>C:\\temp\\</td>
+<td>de_shieldHome-checkout</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+info: Web element scrolling success [[FirefoxDriver: firefox on ANY (7af2f89c-053b-4d60-a2f5-8f0ebd6447fb)] -> css selector: .cta-preorder-button.js-add-button.btn]<br/>
+info: Web element scrolling success [[FirefoxDriver: firefox on ANY (7af2f89c-053b-4d60-a2f5-8f0ebd6447fb)] -> css selector: .cta-preorder-button.js-add-button.btn]<br/>
+refer this screenshot:C:\Users\gchand.NVIDIA.COM\.jenkins\workspace\shield2.1\shieldJan10th-gopi.zip_expanded\SanityChecks\screenshots closeDRPreOrderPopup<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartSubTotal</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+Cart Product total shows as expected <br/>
+1<br/>
+NVIDIA® SHIELD™ TV
+Entfernen<br/>
+€ 229.99<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartOverLayPopup</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+Info: Cart overLay pop-up shows after added the product<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyProductAddedToCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+Product is added to cart as expected <br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Shield Home Page, SHIELD  pro product</h1>
+<h2 id="m15">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartProductCountDeCrease</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product count is  decreased as expected<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyRemoveProductFromCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product has remvoed from cart<br/>
+Empty message is shows as expected <br/>
+Empty message from Cart: Your cart is empty<br/>
+Remove functionalites works as expected <br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartCounterUpdate</h2>
+<div style="padding-left:3em">
+Cart Counter has updated once added the product <br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyPrice</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+<td>€329.99</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+productID: 5088794700 provided buttonText: €329.99 Actual Button Text: €329.99<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyProductAddedToCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+Product is added to cart as expected <br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartProductCountIncrease</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product count is  increased as expected<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartSubTotal</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+Cart Product total shows as expected <br/>
+1<br/>
+NVIDIA® SHIELD™ TV Pro
+Entfernen<br/>
+€ 329.99<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartEmptymessage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product has remvoed from cart<br/>
+Empty message is shows as expected <br/>
+Empty message from Cart: Your cart is empty<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartOverLayPopup</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+Info: Cart overLay pop-up shows after added the product<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyButtonText</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+<td>IN DEN EINKAUFSWAGEN</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+productID: 5088794700 provided buttonText: IN DEN EINKAUFSWAGEN Actual Button Text: IN DEN EINKAUFSWAGEN<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:addProductToCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+ webelement not foundIndex: 1, Size: 0<br/>
+info: Web element scrolling success [[FirefoxDriver: firefox on ANY (1e3920b5-2cf0-416e-8186-15dda91c3abd)] -> xpath: .//div[starts-with(@class,'product-row__item js-product-item') and @data-digital-river-id='5088794700']/div[2]/a]<br/>
+Info: Button call to action works as expected<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartClose</h2>
+<div style="padding-left:3em">
+ Clicked the Cart pop-up <br/>
+Cart pop-up is closed<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartTotalAmout</h2>
+<div style="padding-left:3em">
+Cart totla amount shows as expected€ 329.99<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Shield Home Page, SHIELD  Tablet K1</h1>
+<h2 id="m28">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyRemoveProductFromCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>327801100</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<h3>Test Messages</h3>
+Remove functionalites not working exception<br/>
+refer this screenshot:C:\Users\gchand.NVIDIA.COM\.jenkins\workspace\shield2.1\shieldJan10th-gopi.zip_expanded\SanityChecks\screenshots removeProducts<br/>
+<h3>Failure</h3>
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyRemoveProductFromCart(AddToCartTestCases.java:110)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartTotalAmout</h2>
+<div style="padding-left:3em">
+<h3>Test Messages</h3>
+Cart total  amount not shows, getting exception<br/>
+refer this screenshot:C:\Users\gchand.NVIDIA.COM\.jenkins\workspace\shield2.1\shieldJan10th-gopi.zip_expanded\SanityChecks\screenshots CheckTotalAmoutPresent<br/>
+<h3>Failure</h3>
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartTotalAmout(AddToCartTestCases.java:69)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartProductCountDeCrease</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>327801100</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<h3>Test Messages</h3>
+product count exception<br/>
+Unable to locate element: .//li[@class='cart-item cart-item--327801100']/div[1]/a[1]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\GCHAND~1.COM\AppData\Local\Temp\rust_mozprofile.QNet3cRN7LTZ, rotatable=false, timeouts={implicit=0, page load=300000, script=30000}, pageLoadStrategy=normal, platform=ANY, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=52.0.2, platformVersion=10.0, moz:processID=23628, browserName=firefox, platformName=windows_nt}]
+Session ID: 059bcc3a-9058-4a57-abbe-d49631b1c532
+*** Element info: {Using=xpath, value=.//li[@class='cart-item cart-item--327801100']/div[1]/a[1]}<br/>
+refer this screenshot:C:\Users\gchand.NVIDIA.COM\.jenkins\workspace\shield2.1\shieldJan10th-gopi.zip_expanded\SanityChecks\screenshots checkProductCountDecreased<br/>
+<h3>Failure</h3>
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountDeCrease(AddToCartTestCases.java:101)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m31">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartCounterUpdate</h2>
+<div style="padding-left:3em">
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartCounterUpdate(AddToCartTestCases.java:85)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m32">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartSubTotal</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>327801100</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<h3>Test Messages</h3>
+Cart Product total exception <br/>
+refer this screenshot:C:\Users\gchand.NVIDIA.COM\.jenkins\workspace\shield2.1\shieldJan10th-gopi.zip_expanded\SanityChecks\screenshots checkSubToalPresent<br/>
+<h3>Failure</h3>
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartSubTotal(AddToCartTestCases.java:78)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m33">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyButtonText</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>327801100</td>
+<td>IN DEN EINKAUFSWAGEN</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<h3>Test Messages</h3>
+productID: 327801100 provided buttonText: IN DEN EINKAUFSWAGEN Actual Button Text: NOTIFY ME<br/>
+<h3>Failure</h3>
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyButtonText(AddToCartTestCases.java:34)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m34">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartClose</h2>
+<div style="padding-left:3em">
+<h3>Test Messages</h3>
+ Cart pop-up clsoing issue<br/>
+refer this screenshot:C:\Users\gchand.NVIDIA.COM\.jenkins\workspace\shield2.1\shieldJan10th-gopi.zip_expanded\SanityChecks\screenshots CheckCartOverlayClose<br/>
+<h3>Failure</h3>
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartClose(AddToCartTestCases.java:126)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m35">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartProductCountIncrease</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>327801100</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<h3>Test Messages</h3>
+product count exception<br/>
+refer this screenshot:C:\Users\gchand.NVIDIA.COM\.jenkins\workspace\shield2.1\shieldJan10th-gopi.zip_expanded\SanityChecks\screenshots checkProductCountIncreased<br/>
+<h3>Failure</h3>
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountIncrease(AddToCartTestCases.java:93)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m36">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartEmptymessage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>327801100</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<h3>Test Messages</h3>
+product has remvoed from cart<br/>
+Empty message is not showing, Exception <br/>
+refer this screenshot:C:\Users\gchand.NVIDIA.COM\.jenkins\workspace\shield2.1\shieldJan10th-gopi.zip_expanded\SanityChecks\screenshots checkEmptyMessage<br/>
+<h3>Failure</h3>
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartEmptymessage(AddToCartTestCases.java:118)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m37">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartOverLayPopup</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>327801100</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<h3>Test Messages</h3>
+Info: Cart overLay pop-up not showing Exception<br/>
+Error: refer this screenshot:C:\Users\gchand.NVIDIA.COM\.jenkins\workspace\shield2.1\shieldJan10th-gopi.zip_expanded\SanityChecks\screenshots CheckCartOverLayPopupAppears<br/>
+<h3>Failure</h3>
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartOverLayPopup(AddToCartTestCases.java:52)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m38">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyProductAddedToCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>327801100</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<h3>Test Messages</h3>
+ SHIELD product is not added to cart after click the add to cart <br/>
+<h3>Failure</h3>
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyProductAddedToCart(AddToCartTestCases.java:61)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m39">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:addProductToCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>327801100</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+info: Web element scrolling success [[FirefoxDriver: firefox on ANY (059bcc3a-9058-4a57-abbe-d49631b1c532)] -> xpath: .//div[starts-with(@class,'product-row__item js-product-item') and @data-digital-river-id='327801100']/div[2]/a]<br/>
+Info: Button call to action works as expected<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m40">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyPrice</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>327801100</td>
+<td>€199.99</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+productID: 327801100 provided buttonText: €199.99 Actual Button Text: €199.99<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Shield TV  Page, SHIELD product</h1>
+<h2 id="m41">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:addProductToCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+info: Web element scrolling success [[FirefoxDriver: firefox on ANY (7d1395a8-269e-40d4-8faf-fc1d8318ead7)] -> xpath: .//div[starts-with(@class,'product-row__item js-product-item') and @data-digital-river-id='5088793800']/div[2]/a]<br/>
+Info: Button call to action works as expected<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m42">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartCounterUpdate</h2>
+<div style="padding-left:3em">
+Cart Counter has updated once added the product <br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m43">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartProductCountIncrease</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product count is  increased as expected<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m44">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyProductAddedToCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+Product is added to cart as expected <br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m45">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartEmptymessage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product has remvoed from cart<br/>
+Empty message is shows as expected <br/>
+Empty message from Cart: Your cart is empty<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m46">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartProductCountDeCrease</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product count is  decreased as expected<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m47">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyRemoveProductFromCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product has remvoed from cart<br/>
+Empty message is shows as expected <br/>
+Empty message from Cart: Your cart is empty<br/>
+Remove functionalites works as expected <br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m48">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyButtonText</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+<td>IN DEN EINKAUFSWAGEN</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+productID: 5088793800 provided buttonText: IN DEN EINKAUFSWAGEN Actual Button Text: IN DEN EINKAUFSWAGEN<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m49">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyPrice</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+<td>€229.99</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+productID: 5088793800 provided buttonText: €229.99 Actual Button Text: €229.99<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m50">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartTotalAmout</h2>
+<div style="padding-left:3em">
+Cart totla amount shows as expected€ 229.99<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m51">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartOverLayPopup</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+Info: Cart overLay pop-up shows after added the product<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m52">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCheckout</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>C:\\temp\\</td>
+<td>de_shieldtv-checkout</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+info: Web element scrolling success [[FirefoxDriver: firefox on ANY (7d1395a8-269e-40d4-8faf-fc1d8318ead7)] -> css selector: .cta-preorder-button.js-add-button.btn]<br/>
+info: Web element scrolling success [[FirefoxDriver: firefox on ANY (7d1395a8-269e-40d4-8faf-fc1d8318ead7)] -> css selector: .cta-preorder-button.js-add-button.btn]<br/>
+info: Web element scrolling success [[FirefoxDriver: firefox on ANY (7d1395a8-269e-40d4-8faf-fc1d8318ead7)] -> css selector: .cta-preorder-button.js-add-button.btn]<br/>
+info: Web element scrolling success [[FirefoxDriver: firefox on ANY (7d1395a8-269e-40d4-8faf-fc1d8318ead7)] -> css selector: .cta-preorder-button.js-add-button.btn]<br/>
+info: Web element scrolling success [[FirefoxDriver: firefox on ANY (7d1395a8-269e-40d4-8faf-fc1d8318ead7)] -> css selector: .cta-preorder-button.js-add-button.btn]<br/>
+info: Web element scrolling success [[FirefoxDriver: firefox on ANY (7d1395a8-269e-40d4-8faf-fc1d8318ead7)] -> css selector: .cta-preorder-button.js-add-button.btn]<br/>
+info: Web element scrolling success [[FirefoxDriver: firefox on ANY (7d1395a8-269e-40d4-8faf-fc1d8318ead7)] -> css selector: .cta-preorder-button.js-add-button.btn]<br/>
+ClickAllProductButtons: Exception in CheckoutFlow, ignorable<br/>
+info: Web element scrolling success [[FirefoxDriver: firefox on ANY (7d1395a8-269e-40d4-8faf-fc1d8318ead7)] -> css selector: .cta-preorder-button.js-add-button.btn]<br/>
+ClickAllProductButtons: Exception in CheckoutFlow, ignorable<br/>
+info: Web element scrolling success [[FirefoxDriver: firefox on ANY (7d1395a8-269e-40d4-8faf-fc1d8318ead7)] -> css selector: .cta-preorder-button.js-add-button.btn]<br/>
+ClickAllProductButtons: Exception in CheckoutFlow, ignorable<br/>
+info: Web element scrolling success [[FirefoxDriver: firefox on ANY (7d1395a8-269e-40d4-8faf-fc1d8318ead7)] -> css selector: .cta-preorder-button.js-add-button.btn]<br/>
+ClickAllProductButtons: Exception in CheckoutFlow, ignorable<br/>
+refer this screenshot:C:\Users\gchand.NVIDIA.COM\.jenkins\workspace\shield2.1\shieldJan10th-gopi.zip_expanded\SanityChecks\screenshots closeDRPreOrderPopup<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m53">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartSubTotal</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+Cart Product total shows as expected <br/>
+1<br/>
+NVIDIA® SHIELD™ TV
+Entfernen<br/>
+€ 229.99<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m54">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartClose</h2>
+<div style="padding-left:3em">
+ Clicked the Cart pop-up <br/>
+Cart pop-up is closed<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Shield TV  Page, SHIELD  pro product</h1>
+<h2 id="m55">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:addProductToCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+info: Web element scrolling success [[FirefoxDriver: firefox on ANY (8c6e442e-bfae-48a8-800b-1a3816d1a45a)] -> xpath: .//li[contains(@data-tab, '-tab-2')]]<br/>
+info: Web element scrolling success [[FirefoxDriver: firefox on ANY (8c6e442e-bfae-48a8-800b-1a3816d1a45a)] -> xpath: .//div[starts-with(@class,'product-row__item js-product-item') and @data-digital-river-id='5088794700']/div[2]/a]<br/>
+Info: Button call to action works as expected<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m56">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartTotalAmout</h2>
+<div style="padding-left:3em">
+Cart totla amount shows as expected€ 329.99<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m57">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartProductCountDeCrease</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product count is  decreased as expected<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m58">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyButtonText</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+<td>IN DEN EINKAUFSWAGEN</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+productID: 5088794700 provided buttonText: IN DEN EINKAUFSWAGEN Actual Button Text: IN DEN EINKAUFSWAGEN<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m59">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartOverLayPopup</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+Info: Cart overLay pop-up shows after added the product<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m60">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyPrice</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+<td>€329.99</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+productID: 5088794700 provided buttonText: €329.99 Actual Button Text: €329.99<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m61">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyRemoveProductFromCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product has remvoed from cart<br/>
+Empty message is shows as expected <br/>
+Empty message from Cart: Your cart is empty<br/>
+Remove functionalites works as expected <br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m62">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartClose</h2>
+<div style="padding-left:3em">
+ Clicked the Cart pop-up <br/>
+Cart pop-up is closed<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m63">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartSubTotal</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+Cart Product total shows as expected <br/>
+1<br/>
+NVIDIA® SHIELD™ TV Pro
+Entfernen<br/>
+€ 329.99<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m64">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartEmptymessage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product has remvoed from cart<br/>
+Empty message is shows as expected <br/>
+Empty message from Cart: Your cart is empty<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m65">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartCounterUpdate</h2>
+<div style="padding-left:3em">
+Cart Counter has updated once added the product <br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m66">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartProductCountIncrease</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product count is  increased as expected<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m67">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyProductAddedToCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+Product is added to cart as expected <br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Shield TV  Page, SHIELD CONTROLLER  product</h1>
+<h2 id="m68">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:addProductToCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088902400</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+info: Web element scrolling success [[FirefoxDriver: firefox on ANY (80c66749-2ec8-4353-aaf9-bc6199854e8d)] -> xpath: .//div[starts-with(@class,'product-row__item js-product-item') and @data-digital-river-id='5088902400']/div[2]/a]<br/>
+Info: Button call to action works as expected<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m69">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartProductCountIncrease</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088902400</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product count is  increased as expected<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m70">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyRemoveProductFromCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088902400</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product has remvoed from cart<br/>
+Empty message is shows as expected <br/>
+Empty message from Cart: Your cart is empty<br/>
+Remove functionalites works as expected <br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m71">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartEmptymessage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088902400</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product has remvoed from cart<br/>
+Empty message is shows as expected <br/>
+Empty message from Cart: Your cart is empty<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m72">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartProductCountDeCrease</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088902400</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product count is  decreased as expected<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m73">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyPrice</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>5088902400</td>
+<td>€69.99</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+productID: 5088902400 provided buttonText: €69.99 Actual Button Text: €69.99<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m74">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartTotalAmout</h2>
+<div style="padding-left:3em">
+Cart totla amount shows as expected€ 69.99<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m75">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyButtonText</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>5088902400</td>
+<td>IN DEN EINKAUFSWAGEN</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+productID: 5088902400 provided buttonText: IN DEN EINKAUFSWAGEN Actual Button Text: IN DEN EINKAUFSWAGEN<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m76">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartCounterUpdate</h2>
+<div style="padding-left:3em">
+Cart Counter has updated once added the product <br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m77">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartOverLayPopup</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088902400</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+Info: Cart overLay pop-up shows after added the product<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m78">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyProductAddedToCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088902400</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+Product is added to cart as expected <br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m79">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartSubTotal</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088902400</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+Cart Product total shows as expected <br/>
+1<br/>
+NVIDIA® SHIELD™ Controller
+Entfernen<br/>
+€ 69.99<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m80">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartClose</h2>
+<div style="padding-left:3em">
+ Clicked the Cart pop-up <br/>
+Cart pop-up is closed<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Shield TV  Page, SHIELD STAND  product</h1>
+<h2 id="m81">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartProductCountIncrease</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088903600</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product count is  increased as expected<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m82">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartOverLayPopup</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088903600</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+Info: Cart overLay pop-up shows after added the product<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m83">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartEmptymessage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088903600</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product has remvoed from cart<br/>
+Empty message is shows as expected <br/>
+Empty message from Cart: Your cart is empty<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m84">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:addProductToCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088903600</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+info: Web element scrolling success [[FirefoxDriver: firefox on ANY (c8a26537-6808-4548-977c-28793babba7e)] -> xpath: .//div[starts-with(@class,'product-row__item js-product-item') and @data-digital-river-id='5088903600']/div[2]/a]<br/>
+Info: Button call to action works as expected<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m85">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyButtonText</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>5088903600</td>
+<td>IN DEN EINKAUFSWAGEN</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+productID: 5088903600 provided buttonText: IN DEN EINKAUFSWAGEN Actual Button Text: IN DEN EINKAUFSWAGEN<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m86">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartCounterUpdate</h2>
+<div style="padding-left:3em">
+Cart Counter has updated once added the product <br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m87">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyProductAddedToCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088903600</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+Product is added to cart as expected <br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m88">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyPrice</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>5088903600</td>
+<td>€24.99</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+productID: 5088903600 provided buttonText: €24.99 Actual Button Text: €24.99<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m89">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartProductCountDeCrease</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088903600</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product count is  decreased as expected<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m90">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyRemoveProductFromCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088903600</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product has remvoed from cart<br/>
+Empty message is shows as expected <br/>
+Empty message from Cart: Your cart is empty<br/>
+Remove functionalites works as expected <br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m91">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartTotalAmout</h2>
+<div style="padding-left:3em">
+Cart totla amount shows as expected€ 24.99<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m92">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartClose</h2>
+<div style="padding-left:3em">
+ Clicked the Cart pop-up <br/>
+Cart pop-up is closed<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m93">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartSubTotal</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088903600</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+Cart Product total shows as expected <br/>
+1<br/>
+NVIDIA® SHIELD™ TV Stand
+Entfernen<br/>
+€ 24.99<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Shield TV  Page, SHIELD remote  product</h1>
+<h2 id="m94">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyButtonText</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>5088904500</td>
+<td>IN DEN EINKAUFSWAGEN</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+productID: 5088904500 provided buttonText: IN DEN EINKAUFSWAGEN Actual Button Text: IN DEN EINKAUFSWAGEN<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m95">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartEmptymessage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088904500</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product has remvoed from cart<br/>
+Empty message is shows as expected <br/>
+Empty message from Cart: Your cart is empty<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m96">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyPrice</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>5088904500</td>
+<td>€59.99</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+productID: 5088904500 provided buttonText: €59.99 Actual Button Text: €59.99<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m97">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:addProductToCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088904500</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+info: Web element scrolling success [[FirefoxDriver: firefox on ANY (5a059630-084c-49b6-b324-793f7e5dcef2)] -> xpath: .//div[starts-with(@class,'product-row__item js-product-item') and @data-digital-river-id='5088904500']/div[2]/a]<br/>
+Info: Button call to action works as expected<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m98">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartProductCountDeCrease</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088904500</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product count is  decreased as expected<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m99">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartCounterUpdate</h2>
+<div style="padding-left:3em">
+Cart Counter has updated once added the product <br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m100">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyRemoveProductFromCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088904500</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product has remvoed from cart<br/>
+Empty message is shows as expected <br/>
+Empty message from Cart: Your cart is empty<br/>
+Remove functionalites works as expected <br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m101">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyProductAddedToCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088904500</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+Product is added to cart as expected <br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m102">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartSubTotal</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088904500</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+Cart Product total shows as expected <br/>
+1<br/>
+NVIDIA® SHIELD™ Remote
+Entfernen<br/>
+€ 59.99<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m103">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartClose</h2>
+<div style="padding-left:3em">
+ Clicked the Cart pop-up <br/>
+Cart pop-up is closed<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m104">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartProductCountIncrease</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088904500</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product count is  increased as expected<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m105">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartTotalAmout</h2>
+<div style="padding-left:3em">
+Cart totla amount shows as expected€ 59.99<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m106">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartOverLayPopup</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088904500</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+Info: Cart overLay pop-up shows after added the product<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Shield TV  Page, SHIELD Pro stand  product</h1>
+<h2 id="m107">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyButtonText</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>5088905400</td>
+<td>AIN DEN EINKAUFSWAGEN</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<h3>Test Messages</h3>
+productID: 5088905400 provided buttonText: AIN DEN EINKAUFSWAGEN Actual Button Text: IN DEN EINKAUFSWAGEN<br/>
+<h3>Failure</h3>
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyButtonText(AddToCartTestCases.java:34)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m108">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartOverLayPopup</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088905400</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+Info: Cart overLay pop-up shows after added the product<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m109">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartClose</h2>
+<div style="padding-left:3em">
+ Clicked the Cart pop-up <br/>
+Cart pop-up is closed<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m110">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartProductCountIncrease</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088905400</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product count is  increased as expected<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m111">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartEmptymessage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088905400</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product has remvoed from cart<br/>
+Empty message is shows as expected <br/>
+Empty message from Cart: Your cart is empty<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m112">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartTotalAmout</h2>
+<div style="padding-left:3em">
+Cart totla amount shows as expected€ 34.99<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m113">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyRemoveProductFromCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088905400</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product has remvoed from cart<br/>
+Empty message is shows as expected <br/>
+Empty message from Cart: Your cart is empty<br/>
+Remove functionalites works as expected <br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m114">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyPrice</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>5088905400</td>
+<td>€34.99</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+productID: 5088905400 provided buttonText: €34.99 Actual Button Text: €34.99<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m115">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:addProductToCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088905400</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+info: Web element scrolling success [[FirefoxDriver: firefox on ANY (bf33810c-3ce8-49fd-88eb-2b05830dffbf)] -> xpath: .//li[contains(@data-tab, '-tab-2')]]<br/>
+info: Web element scrolling success [[FirefoxDriver: firefox on ANY (bf33810c-3ce8-49fd-88eb-2b05830dffbf)] -> xpath: .//div[starts-with(@class,'product-row__item js-product-item') and @data-digital-river-id='5088905400']/div[2]/a]<br/>
+Info: Button call to action works as expected<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m116">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyProductAddedToCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088905400</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+Product is added to cart as expected <br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m117">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartProductCountDeCrease</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088905400</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product count is  decreased as expected<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m118">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartSubTotal</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088905400</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+Cart Product total shows as expected <br/>
+1<br/>
+NVIDIA® SHIELD™ TV Pro Stand
+Entfernen<br/>
+€ 34.99<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m119">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartCounterUpdate</h2>
+<div style="padding-left:3em">
+Cart Counter has updated once added the product <br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>AI HOME Page, SHIELD product</h1>
+<h2 id="m120">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartSubTotal</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+Cart Product total shows as expected <br/>
+1<br/>
+NVIDIA® SHIELD™ TV
+Entfernen<br/>
+€ 229.99<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m121">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:addProductToCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+info: Web element scrolling success [[FirefoxDriver: firefox on ANY (42077902-50a5-4063-b53d-d75372da8fa8)] -> xpath: .//div[starts-with(@class,'product-row__item js-product-item') and @data-digital-river-id='5088793800']/div[2]/a]<br/>
+Info: Button call to action works as expected<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m122">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartProductCountDeCrease</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product count is  decreased as expected<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m123">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyRemoveProductFromCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product has remvoed from cart<br/>
+Empty message is shows as expected <br/>
+Empty message from Cart: Your cart is empty<br/>
+Remove functionalites works as expected <br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m124">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartTotalAmout</h2>
+<div style="padding-left:3em">
+Cart totla amount shows as expected€ 229.99<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m125">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyButtonText</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+<td>IN DEN EINKAUFSWAGEN</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+productID: 5088793800 provided buttonText: IN DEN EINKAUFSWAGEN Actual Button Text: IN DEN EINKAUFSWAGEN<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m126">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCheckout</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>C:\\temp\\</td>
+<td>de_AI_Home-checkout</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+info: Web element scrolling success [[FirefoxDriver: firefox on ANY (42077902-50a5-4063-b53d-d75372da8fa8)] -> css selector: .cta-preorder-button.js-add-button.btn]<br/>
+info: Web element scrolling success [[FirefoxDriver: firefox on ANY (42077902-50a5-4063-b53d-d75372da8fa8)] -> css selector: .cta-preorder-button.js-add-button.btn]<br/>
+ClickAllProductButtons: Exception in CheckoutFlow, ignorable<br/>
+refer this screenshot:C:\Users\gchand.NVIDIA.COM\.jenkins\workspace\shield2.1\shieldJan10th-gopi.zip_expanded\SanityChecks\screenshots closeDRPreOrderPopup<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m127">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyPrice</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+<td>€229.99</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+productID: 5088793800 provided buttonText: €229.99 Actual Button Text: €229.99<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m128">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartClose</h2>
+<div style="padding-left:3em">
+ Clicked the Cart pop-up <br/>
+Cart pop-up is closed<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m129">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyProductAddedToCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+Product is added to cart as expected <br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m130">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartOverLayPopup</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+Info: Cart overLay pop-up shows after added the product<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m131">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartCounterUpdate</h2>
+<div style="padding-left:3em">
+Cart Counter has updated once added the product <br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m132">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartProductCountIncrease</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product count is  increased as expected<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m133">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartEmptymessage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088793800</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+product has remvoed from cart<br/>
+Empty message is shows as expected <br/>
+Empty message from Cart: Your cart is empty<br/>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>AI HOME Page, SHIELD  pro product</h1>
+<h2 id="m134">shield.enus.com.nvidia.www.javatests.CloseBrowser:closeBrowser</h2>
+<div style="padding-left:3em">
+<p>Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;GCHAND-DT&apos;, ip: &apos;10.24.35.10&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:130)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:487)
+<br/>at shield.enus.com.nvidia.www.javatests.CloseBrowser.closeBrowser(CloseBrowser.java:14)
+<br/>23 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m135">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartProductCountIncrease</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<h3>Test Messages</h3>
+product count exception<br/>
+refer this screenshot:C:\Users\gchand.NVIDIA.COM\.jenkins\workspace\shield2.1\shieldJan10th-gopi.zip_expanded\SanityChecks\screenshots checkProductCountIncreased<br/>
+<h3>Failure</h3>
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountIncrease(AddToCartTestCases.java:93)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m136">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartProductCountDeCrease</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<h3>Test Messages</h3>
+product count exception<br/>
+Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver<br/>
+refer this screenshot:C:\Users\gchand.NVIDIA.COM\.jenkins\workspace\shield2.1\shieldJan10th-gopi.zip_expanded\SanityChecks\screenshots checkProductCountDecreased<br/>
+<h3>Failure</h3>
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartProductCountDeCrease(AddToCartTestCases.java:101)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m137">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartCounterUpdate</h2>
+<div style="padding-left:3em">
+<h3>Test Messages</h3>
+Cart Counter has updated once added the product <br/>
+refer this screenshot:C:\Users\gchand.NVIDIA.COM\.jenkins\workspace\shield2.1\shieldJan10th-gopi.zip_expanded\SanityChecks\screenshots checkCartCounterUpdate<br/>
+<h3>Failure</h3>
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartCounterUpdate(AddToCartTestCases.java:85)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m138">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyRemoveProductFromCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<h3>Test Messages</h3>
+Remove functionalites not working exception<br/>
+refer this screenshot:C:\Users\gchand.NVIDIA.COM\.jenkins\workspace\shield2.1\shieldJan10th-gopi.zip_expanded\SanityChecks\screenshots removeProducts<br/>
+<h3>Failure</h3>
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyRemoveProductFromCart(AddToCartTestCases.java:110)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m139">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartSubTotal</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<h3>Test Messages</h3>
+Cart Product total exception <br/>
+refer this screenshot:C:\Users\gchand.NVIDIA.COM\.jenkins\workspace\shield2.1\shieldJan10th-gopi.zip_expanded\SanityChecks\screenshots checkSubToalPresent<br/>
+<h3>Failure</h3>
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartSubTotal(AddToCartTestCases.java:78)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m140">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyPrice</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+<td>€329.99</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<h3>Test Messages</h3>
+Info: webelement: null<br/>
+Info: webelement Exception : org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver<br/>
+Error: Exception in CheckButtonText productID: 5088794700 provided buttonText: €329.99  Actual Button Text: <br/>
+Error: refer this screenshot:C:\Users\gchand.NVIDIA.COM\.jenkins\workspace\shield2.1\shieldJan10th-gopi.zip_expanded\SanityChecks\screenshots CheckCurrencyValue<br/>
+<h3>Failure</h3>
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyPrice(AddToCartTestCases.java:42)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m141">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyProductAddedToCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<h3>Test Messages</h3>
+ SHIELD product is not added to cart after click the add to cart <br/>
+<h3>Failure</h3>
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyProductAddedToCart(AddToCartTestCases.java:61)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m142">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartClose</h2>
+<div style="padding-left:3em">
+<h3>Test Messages</h3>
+ Cart pop-up clsoing issue<br/>
+refer this screenshot:C:\Users\gchand.NVIDIA.COM\.jenkins\workspace\shield2.1\shieldJan10th-gopi.zip_expanded\SanityChecks\screenshots CheckCartOverlayClose<br/>
+<h3>Failure</h3>
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartClose(AddToCartTestCases.java:126)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m143">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:addProductToCart</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<h3>Test Messages</h3>
+ webelement not foundSession ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'GCHAND-DT', ip: '10.24.35.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver<br/>
+Error: Button call to action is not working<br/>
+Error: refer this screenshot:C:\Users\gchand.NVIDIA.COM\.jenkins\workspace\shield2.1\shieldJan10th-gopi.zip_expanded\SanityChecks\screenshots addPrductToCrt<br/>
+<h3>Failure</h3>
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.addProductToCart(AddToCartTestCases.java:25)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m144">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartTotalAmout</h2>
+<div style="padding-left:3em">
+<h3>Test Messages</h3>
+Cart total  amount not shows, getting exception<br/>
+refer this screenshot:C:\Users\gchand.NVIDIA.COM\.jenkins\workspace\shield2.1\shieldJan10th-gopi.zip_expanded\SanityChecks\screenshots CheckTotalAmoutPresent<br/>
+<h3>Failure</h3>
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartTotalAmout(AddToCartTestCases.java:69)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m145">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyButtonText</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+<td>IN DEN EINKAUFSWAGEN</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<h3>Test Messages</h3>
+Exception in CheckButtonText productID: 5088794700 provided buttonText: IN DEN EINKAUFSWAGEN Actual Button Text: <br/>
+Error: refer this screenshot:C:\Users\gchand.NVIDIA.COM\.jenkins\workspace\shield2.1\shieldJan10th-gopi.zip_expanded\SanityChecks\screenshots CheckButtonText<br/>
+<h3>Failure</h3>
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyButtonText(AddToCartTestCases.java:34)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m146">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartOverLayPopup</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<h3>Test Messages</h3>
+Info: Cart overLay pop-up not showing Exception<br/>
+Error: refer this screenshot:C:\Users\gchand.NVIDIA.COM\.jenkins\workspace\shield2.1\shieldJan10th-gopi.zip_expanded\SanityChecks\screenshots CheckCartOverLayPopupAppears<br/>
+<h3>Failure</h3>
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartOverLayPopup(AddToCartTestCases.java:52)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m147">shield.enus.com.nvidia.www.javatests.AddToCartTestCases:verifyCartEmptymessage</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>5088794700</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<h3>Test Messages</h3>
+product has remvoed from cart<br/>
+Empty message is not showing, Exception <br/>
+refer this screenshot:C:\Users\gchand.NVIDIA.COM\.jenkins\workspace\shield2.1\shieldJan10th-gopi.zip_expanded\SanityChecks\screenshots checkEmptyMessage<br/>
+<h3>Failure</h3>
+<p>expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at org.testng.Assert.assertTrue(Assert.java:52)
+<br/>at shield.enus.com.nvidia.www.javatests.AddToCartTestCases.verifyCartEmptymessage(AddToCartTestCases.java:118)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

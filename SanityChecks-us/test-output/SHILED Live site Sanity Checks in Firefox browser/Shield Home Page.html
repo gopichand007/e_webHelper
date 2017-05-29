@@ -1,0 +1,225 @@
+<html>
+<head>
+<title>TestNG:  Shield Home Page</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Shield Home Page</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jan 10 10:39:13 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>33 seconds (33240 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.ColumnComponentTestCases.verifyAllLeftColumn()'><b>verifyAllLeftColumn</b><br>Test class: shield.enus.com.nvidia.www.javatests.ColumnComponentTestCases<br/>
+<a href="#Output-120360571" onClick='toggleBox("Output-120360571", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-120360571" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-120360571">
+Left Column: 1 STREAM SMOOTH
+ENTERTAINMENT<br/>
+All left columns are displaying as expeted<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>shield.enus.com.nvidia.www.javatests.ColumnComponentTestCases@370736d9</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.ColumnComponentTestCases.verifyAllRightColumn()'><b>verifyAllRightColumn</b><br>Test class: shield.enus.com.nvidia.www.javatests.ColumnComponentTestCases<br/>
+<a href="#Output-1534754611" onClick='toggleBox("Output-1534754611", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1534754611" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1534754611">
+right Column: 1 GAME HARD
+EXPLORE GAMING<br/>
+All right columns are displaying as expeted<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>shield.enus.com.nvidia.www.javatests.ColumnComponentTestCases@370736d9</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.HeaderAndFooterTestCases.verifyFooterNavigationalLinks()'><b>verifyFooterNavigationalLinks</b><br>Test class: shield.enus.com.nvidia.www.javatests.HeaderAndFooterTestCases<br/>
+<a href="#Output-1461474945" onClick='toggleBox("Output-1461474945", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1461474945" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1461474945">
+Total URLs validated: 15<br/>
+Total URLs Passed: 15  And failed: 0<br/>
+***************************passed links************************<br/>
+200 :https://www.nvidia.com/en-us/shield/shield-tv/#4kvoicesearch<br/>
+200 :https://www.nvidia.com/en-us/shield/games/#geforcenow<br/>
+200 :https://www.nvidia.com/en-us/shield/apps/#accessmedia<br/>
+200 :https://www.nvidia.com/en-us/shield/apps/#library<br/>
+200 :https://www.nvidia.com/en-us/shield/smart-home/#smarthome<br/>
+200 :https://www.nvidia.com/en-us/shield/games/#library<br/>
+200 :https://www.nvidia.com/en-us/shield/apps/#entertainment<br/>
+200 :https://www.nvidia.com/en-us/shield/apps/#voicesearch<br/>
+200 :https://www.nvidia.com/en-us/shield/shield-tv/#Performance<br/>
+200 :https://www.nvidia.com/en-us/shield/apps/#casting<br/>
+200 :https://www.nvidia.com/en-us/shield/shield-tv/#accessories<br/>
+200 :https://www.nvidia.com/en-us/shield/games/#controller<br/>
+200 :https://www.nvidia.com/en-us/shield/games/#android<br/>
+200 :https://www.nvidia.com/en-us/shield/shield-tv/#buynow<br/>
+200 :https://www.nvidia.com/en-us/shield/games/#pcgames<br/>
+***************************no faild links************************<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>shield.enus.com.nvidia.www.javatests.HeaderAndFooterTestCases@5f9d02cb</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.HeaderAndFooterTestCases.verifyGlobalFooterNavigationalLinks()'><b>verifyGlobalFooterNavigationalLinks</b><br>Test class: shield.enus.com.nvidia.www.javatests.HeaderAndFooterTestCases<br/>
+<a href="#Output-94157402" onClick='toggleBox("Output-94157402", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-94157402" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-94157402">
+Total URLs validated: 3<br/>
+Total URLs Passed: 3  And failed: 0<br/>
+***************************passed links************************<br/>
+200 :https://www.nvidia.com/en-us/about-nvidia/privacy-policy/<br/>
+200 :https://www.nvidia.com/en-us/about-nvidia/legal-info/<br/>
+200 :http://www.nvidia.com/object/contact-information.html<br/>
+***************************no faild links************************<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>shield.enus.com.nvidia.www.javatests.HeaderAndFooterTestCases@5f9d02cb</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.HeaderAndFooterTestCases.verifyHeaderNavigationalLinks()'><b>verifyHeaderNavigationalLinks</b><br>Test class: shield.enus.com.nvidia.www.javatests.HeaderAndFooterTestCases<br/>
+<a href="#Output-914942811" onClick='toggleBox("Output-914942811", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-914942811" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-914942811">
+Total URLs validated: 7<br/>
+Total URLs Passed: 7  And failed: 0<br/>
+***************************passed links************************<br/>
+200 :https://www.nvidia.com/en-us/shield/shield-tv/<br/>
+200 :https://shield.nvidia.com/blog<br/>
+200 :https://www.nvidia.com/en-us/shield/games/<br/>
+200 :https://www.nvidia.com/en-us/shield/apps/<br/>
+200 :https://www.nvidia.com/en-us/shield/smart-home/<br/>
+200 :https://www.nvidia.com/en-us/shield/tablet/<br/>
+200 :https://shield.nvidia.com/support<br/>
+***************************no faild links************************<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>shield.enus.com.nvidia.www.javatests.HeaderAndFooterTestCases@5f9d02cb</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.VideoCompnentTestCases.verifyHeroVideo()'><b>verifyHeroVideo</b><br>Test class: shield.enus.com.nvidia.www.javatests.VideoCompnentTestCases<br/>
+<a href="#Output-597307515" onClick='toggleBox("Output-597307515", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-597307515" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-597307515">
+https://www.nvidia.com/content/dam/en-zz/Solutions/SHIELD/new-ces/1home/Darcy_Homepage_Looping_video.mp4<br/>
+https://www.nvidia.com/content/dam/en-zz/Solutions/SHIELD/new-ces/1home/Darcy_Homepage_Looping_video.webm<br/>
+homeHerovideoDisplay successful<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>shield.enus.com.nvidia.www.javatests.VideoCompnentTestCases@52a86356</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.VideoCompnentTestCases.verifyHeroVideoText()'><b>verifyHeroVideoText</b><br>Test class: shield.enus.com.nvidia.www.javatests.VideoCompnentTestCases<br/>
+<a href="#Output-1193471756" onClick='toggleBox("Output-1193471756", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1193471756" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1193471756">
+THE WORLD'S MOST ADVANCED STREAMER
+NVIDIA SHIELD TV
+DISCOVER<br/>
+homeHerovideoTextDisplay successful<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>shield.enus.com.nvidia.www.javatests.VideoCompnentTestCases@52a86356</td></tr>
+<tr>
+<td title='shield.enus.com.nvidia.www.javatests.HeaderAndFooterTestCases.verifylobalFooterSocialMediaLinks()'><b>verifylobalFooterSocialMediaLinks</b><br>Test class: shield.enus.com.nvidia.www.javatests.HeaderAndFooterTestCases<br/>
+<a href="#Output-846974653" onClick='toggleBox("Output-846974653", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-846974653" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-846974653">
+Total URLs validated: 4<br/>
+Total URLs Passed: 4  And failed: 0<br/>
+***************************passed links************************<br/>
+200 :https://twitter.com/nvidiashield<br/>
+200 :https://www.twitch.tv/nvidia<br/>
+200 :https://www.facebook.com/NVIDIASHIELD/<br/>
+200 :https://www.youtube.com/channel/UCL-g3eGJi1omSDSz48AML-g<br/>
+***************************no faild links************************<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>shield.enus.com.nvidia.www.javatests.HeaderAndFooterTestCases@5f9d02cb</td></tr>
+</table><p>
+</body>
+</html>

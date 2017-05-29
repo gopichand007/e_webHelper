@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SHILED Add to cart flows validation in SV_SE locale">
+       <parameter name="browsername" value="firefox"/>
+       <parameter name="path" value="C:\\temp\\"/>
+     
+			<listeners>
+         	<listener class-name="shield.enus.com.nvidia.www.genericlib.TestNGCustomReportListener" />
+       </listeners>	
+   
+   
+       <test name="Shield Home Page, SHIELD product">
+			  	<parameter name="home_url" value="https://www.nvidia.com/sv-se/shield"/>
+			  	<parameter name="productID" value="5088794200"/>
+			  	<parameter name="ButtonText" value="LÄGG I KUNDVAGN"/>
+			  	<parameter name="currencyValue" value="2,299.00 kr"/>
+			  	<parameter name="imageName" value="SE_shieldHome-checkout"/>
+			<classes>
+				 <class name="shield.enus.com.nvidia.www.javatests.StartBrowser"> </class>
+				 <class name="shield.enus.com.nvidia.www.javatests.AddToCartTestCases"> 
+							<methods>
+        						<include name="addProductToCart" />
+        						<include name="verifyButtonText" />
+        						<include name="verifyPrice" />
+        						<include name="verifyCartOverLayPopup" />
+        						<include name="verifyProductAddedToCart" />
+        						<include name="verifyCartTotalAmout" />
+        						<include name="verifyCartSubTotal" />
+        						<include name="verifyCartCounterUpdate" />
+        						<include name="verifyCartProductCountIncrease" />
+        						<include name="verifyCartProductCountDeCrease" />
+        						<include name="verifyRemoveProductFromCart"/>
+        						<include name="verifyCartEmptymessage" />
+        						<include name="verifyCartClose" />
+        						<include name="verifyCheckout" />
+
+    					  </methods>
+    				</class>
+				 <class name="shield.enus.com.nvidia.www.javatests.CloseBrowser"> </class>			
+    		</classes>
+    	
+      </test>
+      
+      <test name="Shield Home Page, SHIELD  pro product">
+			  	<parameter name="home_url" value="https://www.nvidia.com/sv-se/shield"/>		
+			  	<parameter name="productID" value="5088796400"/>
+			  	<parameter name="ButtonText" value="LÄGG I KUNDVAGN"/>
+			  	<parameter name="currencyValue" value="3,199.00 kr"/>
+		<classes>
+			 <class name="shield.enus.com.nvidia.www.javatests.StartBrowser"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.AddToCartTestCases"> 
+							<methods>
+        						<include name="addProductToCart" />
+        						<include name="verifyButtonText" />
+        						<include name="verifyPrice" />
+        						<include name="verifyCartOverLayPopup" />
+        						<include name="verifyProductAddedToCart" />
+        						<include name="verifyCartTotalAmout" />
+        						<include name="verifyCartSubTotal" />
+        						<include name="verifyCartCounterUpdate" />
+        						<include name="verifyCartProductCountIncrease" />
+        						<include name="verifyCartProductCountDeCrease" />
+        						<include name="verifyRemoveProductFromCart"/>
+        						<include name="verifyCartEmptymessage" />
+        						<include name="verifyCartClose" />
+	        					<exclude name="verifyCheckout" />
+    					  </methods>
+    				</class>
+			 <class name="shield.enus.com.nvidia.www.javatests.CloseBrowser"> </class>			
+    	</classes>
+      </test>
+      
+      
+	<test name="Shield Home Page, SHIELD  Tablet K1">
+			  	<parameter name="home_url" value="https://www.nvidia.com/sv-se/shield"/>		
+				<parameter name="productID" value="327802300"/>
+				<parameter name="ButtonText" value="LÄGG I KUNDVAGN"/>
+			  	<parameter name="currencyValue" value="1,999.00 kr"/>
+		<classes>
+			 <class name="shield.enus.com.nvidia.www.javatests.StartBrowser"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.AddToCartTestCases">	
+			 				<methods>
+        						<include name="addProductToCart" />
+        						<include name="verifyButtonText" />
+        						<include name="verifyPrice" />
+        						<include name="verifyCartOverLayPopup" />
+        						<include name="verifyProductAddedToCart" />
+        						<include name="verifyCartTotalAmout" />
+        						<include name="verifyCartSubTotal" />
+        						<include name="verifyCartCounterUpdate" />
+        						<include name="verifyCartProductCountIncrease" />
+        						<include name="verifyCartProductCountDeCrease" />
+        						<include name="verifyRemoveProductFromCart"/>
+        						<include name="verifyCartEmptymessage" />
+        						<include name="verifyCartClose" />
+	        					<exclude name="verifyCheckout" />
+    					  </methods>
+    				</class>
+			 <class name="shield.enus.com.nvidia.www.javatests.CloseBrowser"> </class>			
+    	</classes>
+    	
+      </test>
+      
+
+	<test name="Shield TV  Page, SHIELD product">
+			  <parameter name="home_url" value="https://www.nvidia.com/sv-se/shield/shield-tv/"/>		
+			 <parameter name="productID" value="5088794200"/>
+			  	<parameter name="ButtonText" value="LÄGG I KUNDVAGN"/>
+			  	<parameter name="currencyValue" value="2,299.00 kr"/>
+			  	<parameter name="imageName" value="SE_shieldtv-checkout"/>
+		<classes>
+			 <class name="shield.enus.com.nvidia.www.javatests.StartBrowser"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.AddToCartTestCases">
+			 			 <methods>
+        						<include name="addProductToCart" />
+        						<include name="verifyButtonText" />
+        						<include name="verifyPrice" />
+        						<include name="verifyCartOverLayPopup" />
+        						<include name="verifyProductAddedToCart" />
+        						<include name="verifyCartTotalAmout" />
+        						<include name="verifyCartSubTotal" />
+        						<include name="verifyCartCounterUpdate" />
+        						<include name="verifyCartProductCountIncrease" />
+        						<include name="verifyCartProductCountDeCrease" />
+        						<include name="verifyRemoveProductFromCart"/>
+        						<include name="verifyCartEmptymessage" />
+        						<include name="verifyCartClose" />
+	        					<include name="verifyCheckout" />
+    					  </methods>
+    				</class>
+			 <class name="shield.enus.com.nvidia.www.javatests.CloseBrowser"> </class>			
+    	</classes>
+	</test>
+      
+
+	<test name="Shield TV  Page, SHIELD  pro product">
+			  <parameter name="home_url" value="https://www.nvidia.com/sv-se/shield/shield-tv/"/>
+			<parameter name="productID" value="5088796400"/>
+			  	<parameter name="ButtonText" value="LÄGG I KUNDVAGN"/>
+			  	<parameter name="currencyValue" value="3,199.00 kr"/>
+		<classes>
+			 <class name="shield.enus.com.nvidia.www.javatests.StartBrowser"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.AddToCartTestCases">
+			 			<methods>
+        						<include name="addProductToCart" />
+        						<include name="verifyButtonText" />
+        						<include name="verifyPrice" />
+        						<include name="verifyCartOverLayPopup" />
+        						<include name="verifyProductAddedToCart" />
+        						<include name="verifyCartTotalAmout" />
+        						<include name="verifyCartSubTotal" />
+        						<include name="verifyCartCounterUpdate" />
+        						<include name="verifyCartProductCountIncrease" />
+        						<include name="verifyCartProductCountDeCrease" />
+        						<include name="verifyRemoveProductFromCart"/>
+        						<include name="verifyCartEmptymessage" />
+        						<include name="verifyCartClose" />
+	        					<exclude name="verifyCheckout" />
+    					  </methods>
+    				</class> 
+			 <class name="shield.enus.com.nvidia.www.javatests.CloseBrowser"> </class>			
+    	</classes>	
+	</test>
+      
+      
+      
+	<test name="Shield TV  Page, SHIELD CONTROLLER  product">
+			<parameter name="home_url" value="https://www.nvidia.com/sv-se/shield/shield-tv/"/>		
+			<parameter name="productID" value="5088903200"/>
+			<parameter name="ButtonText" value="LÄGG I KUNDVAGN"/>
+			<parameter name="currencyValue" value="699.00 kr"/>
+		<classes>
+			 <class name="shield.enus.com.nvidia.www.javatests.StartBrowser"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.AddToCartTestCases">
+			 				<methods>
+        						<include name="addProductToCart" />
+        						<include name="verifyButtonText" />
+        						<include name="verifyPrice" />
+        						<include name="verifyCartOverLayPopup" />
+        						<include name="verifyProductAddedToCart" />
+        						<include name="verifyCartTotalAmout" />
+        						<include name="verifyCartSubTotal" />
+        						<include name="verifyCartCounterUpdate" />
+        						<include name="verifyCartProductCountIncrease" />
+        						<include name="verifyCartProductCountDeCrease" />
+        						<include name="verifyRemoveProductFromCart"/>
+        						<include name="verifyCartEmptymessage" />
+        						<include name="verifyCartClose" />
+	        					<exclude name="verifyCheckout" />
+    					  </methods>
+    				</class>
+			 <class name="shield.enus.com.nvidia.www.javatests.CloseBrowser"> </class>			
+    	</classes>
+	</test>
+      
+      
+     <test name="Shield TV  Page, SHIELD STAND  product">
+			  <parameter name="home_url" value="https://www.nvidia.com/sv-se/shield/shield-tv/"/>		
+        	  <parameter name="productID" value="5088904000"/>
+        	  <parameter name="ButtonText" value="LÄGG I KUNDVAGN"/>
+        	  <parameter name="currencyValue" value="249.00 kr"/>
+		<classes>
+			 <class name="shield.enus.com.nvidia.www.javatests.StartBrowser"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.AddToCartTestCases">
+			 			 <methods>
+        						<include name="addProductToCart" />
+        						<include name="verifyButtonText" />
+        						<include name="verifyPrice" />
+        						<include name="verifyCartOverLayPopup" />
+        						<include name="verifyProductAddedToCart" />
+        						<include name="verifyCartTotalAmout" />
+        						<include name="verifyCartSubTotal" />
+        						<include name="verifyCartCounterUpdate" />
+        						<include name="verifyCartProductCountIncrease" />
+        						<include name="verifyCartProductCountDeCrease" />
+        						<include name="verifyRemoveProductFromCart"/>
+        						<include name="verifyCartEmptymessage" />
+        						<include name="verifyCartClose" />
+	        					<exclude name="verifyCheckout" />
+    					  </methods>
+    				</class>
+			 <class name="shield.enus.com.nvidia.www.javatests.CloseBrowser"> </class>			
+    	</classes>
+    	
+      </test> 
+      
+      
+           
+    <test name="Shield TV  Page, SHIELD remote  product">
+			  <parameter name="home_url" value="https://www.nvidia.com/sv-se/shield/shield-tv/"/>		
+			  <parameter name="productID" value="5088904900"/>
+			  <parameter name="ButtonText" value="LÄGG I KUNDVAGN"/>
+			  <parameter name="currencyValue" value="599.00 kr"/>
+		<classes>
+			 <class name="shield.enus.com.nvidia.www.javatests.StartBrowser"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.AddToCartTestCases"> 
+			 				<methods>
+        						<include name="addProductToCart" />
+        						<include name="verifyButtonText" />
+        						<include name="verifyPrice" />
+        						<include name="verifyCartOverLayPopup" />
+        						<include name="verifyProductAddedToCart" />
+        						<include name="verifyCartTotalAmout" />
+        						<include name="verifyCartSubTotal" />
+        						<include name="verifyCartCounterUpdate" />
+        						<include name="verifyCartProductCountIncrease" />
+        						<include name="verifyCartProductCountDeCrease" />
+        						<include name="verifyRemoveProductFromCart"/>
+        						<include name="verifyCartEmptymessage" />
+        						<include name="verifyCartClose" />
+	        					<exclude name="verifyCheckout" />
+    					  </methods>
+    				</class>			 
+
+			 <class name="shield.enus.com.nvidia.www.javatests.CloseBrowser"> </class>			
+    	</classes>
+    	
+      </test> 
+      
+      
+                
+    <test name="Shield TV  Page, SHIELD Pro stand  product">
+			  <parameter name="home_url" value="https://www.nvidia.com/sv-se/shield/shield-tv/"/>		
+			  <parameter name="productID" value="5088905800"/>
+			  <parameter name="ButtonText" value="LÄGG I KUNDVAGN"/>
+			  <parameter name="currencyValue" value="349.00 kr"/>
+			  
+		<classes>
+			 <class name="shield.enus.com.nvidia.www.javatests.StartBrowser"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.AddToCartTestCases">
+			 			 	<methods>
+        						<include name="addProductToCart" />
+        						<include name="verifyButtonText" />
+        						<include name="verifyPrice" />
+        						<include name="verifyCartOverLayPopup" />
+        						<include name="verifyProductAddedToCart" />
+        						<include name="verifyCartTotalAmout" />
+        						<include name="verifyCartSubTotal" />
+        						<include name="verifyCartCounterUpdate" />
+        						<include name="verifyCartProductCountIncrease" />
+        						<include name="verifyCartProductCountDeCrease" />
+        						<include name="verifyRemoveProductFromCart"/>
+        						<include name="verifyCartEmptymessage" />
+        						<include name="verifyCartClose" />
+	        					<exclude name="verifyCheckout" />
+    					  </methods>
+    				</class>
+			 <class name="shield.enus.com.nvidia.www.javatests.CloseBrowser"> </class>			
+    	</classes>
+    	
+      </test> 
+      
+      
+
+   <test name="AI HOME Page, SHIELD product">
+			  <parameter name="home_url" value="https://www.nvidia.com/sv-se/shield/smart-home/"/>		
+			  <parameter name="productID" value="5088794200"/>
+			  	<parameter name="ButtonText" value="LÄGG I KUNDVAGN"/>
+			  	<parameter name="currencyValue" value="2,299.00 kr"/>
+			     <parameter name="imageName" value="SE_AI_Home-checkout"/>
+			  
+		<classes>
+			 <class name="shield.enus.com.nvidia.www.javatests.StartBrowser"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.AddToCartTestCases">
+
+			 				<methods>
+        						<include name="addProductToCart" />
+        						<include name="verifyButtonText" />
+        						<include name="verifyPrice" />
+        						<include name="verifyCartOverLayPopup" />
+        						<include name="verifyProductAddedToCart" />
+        						<include name="verifyCartTotalAmout" />
+        						<include name="verifyCartSubTotal" />
+        						<include name="verifyCartCounterUpdate" />
+        						<include name="verifyCartProductCountIncrease" />
+        						<include name="verifyCartProductCountDeCrease" />
+        						<include name="verifyRemoveProductFromCart"/>
+        						<include name="verifyCartEmptymessage" />
+        						<include name="verifyCartClose" />
+	        					<include name="verifyCheckout" />
+    					  </methods>
+    				</class>
+			 <class name="shield.enus.com.nvidia.www.javatests.CloseBrowser"> </class>			
+    	</classes>
+    	
+      </test> 
+      
+            
+     <test name="AI HOME Page, SHIELD  pro product">
+			  	<parameter name="home_url" value="https://www.nvidia.com/sv-se/shield/smart-home/"/>		
+				<parameter name="productID" value="5088796400"/>
+			  	<parameter name="ButtonText" value="LÄGG I KUNDVAGN"/>
+			  	<parameter name="currencyValue" value="3,199.00 kr"/>
+			  	<parameter name="imageName" value="SE_AI_home-checkout"/>
+		<classes>
+			 <class name="shield.enus.com.nvidia.www.javatests.StartBrowser"> </class>
+			 <class name="shield.enus.com.nvidia.www.javatests.AddToCartTestCases">
+
+
+			 				<methods>
+        						<include name="addProductToCart" />
+        						<include name="verifyButtonText" />
+        						<include name="verifyPrice" />
+        						<include name="verifyCartOverLayPopup" />
+        						<include name="verifyProductAddedToCart" />
+        						<include name="verifyCartTotalAmout" />
+        						<include name="verifyCartSubTotal" />
+        						<include name="verifyCartCounterUpdate" />
+        						<include name="verifyCartProductCountIncrease" />
+        						<include name="verifyCartProductCountDeCrease" />
+        						<include name="verifyRemoveProductFromCart"/>
+        						<include name="verifyCartEmptymessage" />
+        						<include name="verifyCartClose" />
+	        					<exclude name="verifyCheckout" />
+    					  </methods>
+    				</class>
+    				
+    				
+			 <class name="shield.enus.com.nvidia.www.javatests.CloseBrowser"> </class>			
+    	</classes>
+      </test> 
+     
+
+
+     	   
+        </suite> 

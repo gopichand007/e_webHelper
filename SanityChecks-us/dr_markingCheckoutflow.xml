@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DR checkout flow Firefox browser">
+       <parameter name="browsername" value="firefox"/>
+       <parameter name="path" value="C:\\temp\\"/>
+       
+       
+       
+       
+		<test name=" NVIDIA SHIELD TV">
+        <parameter name="home_url" value="https://www.nvidia.com/en-us/shield/"/>
+		<parameter name="productID" value="5088793700"/>
+		<parameter name="ButtonText" value="Add to Cart"/>
+		<parameter name="currencyValue" value="$ 199.99"/>
+        <parameter name="emailAddress" value="gopihy+1@gmail.com"/>
+        <parameter name="password" value="Nv@123456"/>
+        <parameter name="creditCardNumber" value="4444333322221111"/>
+        <parameter name="cvv" value="123"/>
+        
+         <parameter name="gcurlloginurl" value="https://gc.digitalriver.com/gc/ent/login.do"/>
+         <parameter name="gc_userName" value="rprasad"/>
+         <parameter name="gc_password" value="Nvidi@2016"/>
+          <parameter name="gc_prodcutURL" value="http://gc.digitalriver.com/store/nvidia/en_US/buy/productID.5087552300/quantity.1"/>
+          <parameter name="imageName" value="shieldHome-checkout"/>
+
+		<classes>
+			<class name="shield.enus.com.nvidia.www.javatests.StartBrowser"> </class>
+							 <class name="shield.enus.com.nvidia.www.javatests.AddToCartTestCases"> 
+							<methods>
+        						<include name="addProductToCart" />
+        						<include name="verifyButtonText" />
+        						<include name="verifyPrice" />
+        						<include name="verifyCartOverLayPopup" />
+        						<include name="verifyProductAddedToCart" />
+        						<include name="verifyCartTotalAmout" />
+        						<include name="verifyCartSubTotal" />
+        						<include name="verifyCartCounterUpdate" />
+        						<include name="verifyCartProductCountIncrease" />
+        						<include name="verifyCartProductCountDeCrease" />
+        						<include name="verifyRemoveProductFromCart"/>
+        						<include name="verifyCartEmptymessage" />
+        						<include name="verifyCartClose" />
+        						<include name="specificProductCheckout"/>
+        						<exclude name="verifyCheckout" />
+
+    					  </methods>
+    				</class>
+			<class name="shield.enus.com.nvidia.www.javatests.DRCheckOutTests"> </class>
+			<class name="shield.enus.com.nvidia.www.javatests.CloseBrowser"> </class>		
+    	</classes>
+	</test>
+
+       	
+     	   
+        </suite> <!-- Suite -->
+
+ 

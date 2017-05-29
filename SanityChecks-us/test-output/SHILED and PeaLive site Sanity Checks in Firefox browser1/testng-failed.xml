@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SHILED and PeaLive site Sanity Checks in Firefox browser1]">
+  <parameter name="productID" value="327741500"/>
+  <parameter name="home_url" value="https://www.nvidia.com/en-us/shield/"/>
+  <parameter name="browsername" value="firefox"/>
+  <test name="Shield Home Page(failed)">
+    <parameter name="productID" value="327741500"/>
+    <parameter name="home_url" value="https://www.nvidia.com/en-us/shield/"/>
+    <classes>
+      <class name="shield.enus.com.nvidia.www.javatests.StartBrowser">
+        <methods>
+          <include name="browserInitiation"/>
+        </methods>
+      </class> <!-- shield.enus.com.nvidia.www.javatests.StartBrowser -->
+      <class name="shield.enus.com.nvidia.www.javatests.CloseBrowser">
+        <methods>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- shield.enus.com.nvidia.www.javatests.CloseBrowser -->
+      <class name="shield.enus.com.nvidia.www.javatests.VideoCompnentTestCases">
+        <methods>
+          <include name="verifyHeroVideoText"/>
+          <include name="verifyHeroVideo"/>
+        </methods>
+      </class> <!-- shield.enus.com.nvidia.www.javatests.VideoCompnentTestCases -->
+    </classes>
+  </test> <!-- Shield Home Page(failed) -->
+</suite> <!-- Failed suite [SHILED and PeaLive site Sanity Checks in Firefox browser1] -->
